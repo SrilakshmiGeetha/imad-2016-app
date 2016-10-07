@@ -4,8 +4,9 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleOne=
+var articles=
 {
+'articleOne':{
     date:'October 7 2016',
     heading: 'Article One',
     title:'Article one',
@@ -22,10 +23,8 @@ var articleOne=
                 Why we can't move on, just the way you did so easily
             </p>
             `
-};
-
-var articleTwo=
-{
+},
+'articleTwo':{
     date:'October 8 2016',
     title:'Article two',
     heading:'Article Two',
@@ -42,9 +41,8 @@ var articleTwo=
             <p>
                 The way I did before
             </p> `
-};
-var articleThree=
-{
+},
+'articleThree':{
     date:'October 9 2016',
     title:'Article three',
     heading:'Article Three',
@@ -60,6 +58,7 @@ var articleThree=
             <p>
                 Oh, it's just the same
             </p> `
+}
 };
 function createpage(data)
 {
