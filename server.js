@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-/*var articles=
+var articles=
 {
 'articleOne':{
     date:'October 7 2016',
@@ -59,7 +59,7 @@ app.use(morgan('combined'));
                 Oh, it's just the same
             </p> `
 }
-};*/
+};/*
 var articleOne=
 {
     date:'October 7 2016',
@@ -78,7 +78,7 @@ var articleOne=
                 Why we can't move on, just the way you did so easily
             </p>
             `
-};
+}; */
 
 function createpage(data)
 {
@@ -128,9 +128,13 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+
+var counter=0;
 app.get('/:articleName', function (req, res) {
     var articleName=req.params.articleName;
   res.send(createpage(articleName));
+  counter=counter+1;
+  prompt(counter);
 });
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
