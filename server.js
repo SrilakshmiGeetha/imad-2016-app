@@ -98,7 +98,7 @@ function createpage(data)
     </head>
     <body>
         <div class="container">
-            <a href="/">Let's go back</a>
+            <a href="/">Let's go back?</a>
             <hr>
             <div>
                 <h2>
