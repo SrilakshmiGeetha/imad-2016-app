@@ -132,7 +132,7 @@ app.get('/ui/madi.png', function (req, res) {
 
 app.get('/:articleName', function (req, res) {
     var articleName=req.params.articleName;
-  res.send(createpage(articleName));
+  res.send(createpage(articles[articleName]));
 });
 app.get('/Yes',function(req,res){
 
