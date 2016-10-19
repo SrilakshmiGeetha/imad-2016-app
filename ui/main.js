@@ -1,5 +1,5 @@
-var element=document.getElementById('image');
-element.onclick= function()
+var butttons=document.getElementById('counter');
+buttons.onclick= function()
 {
     alert("TRALALALALALLA");
 };
@@ -15,8 +15,8 @@ button.onclick= function()
     console.log("SHIT");
     var span=documemnt.getElementById("times");
     span.innerHTML=counter.toString();
-};*/
- /*counter=0;
+};
+ counter=0;
             var beaut=document.getElementById("yes");
             beaut.onclick= function()
             {
@@ -26,7 +26,7 @@ button.onclick= function()
                 
             }; */
 
-var button=document.getElementById('counter');
+/*var button=document.getElementById('counter');
 button.onclick = function()
 {
     var request=new XMLHttpRequest();
@@ -46,4 +46,4 @@ button.onclick = function()
     request.send(null);
 };
 
-
+*/
