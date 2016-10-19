@@ -9,7 +9,7 @@ button.onclick= function()
     console.log("SHIT");
     var span=documemnt.getElementById("times");
     span.innerHTML=counter.toString();
-};*/
+};
         var counter=0;
             var beaut=document.getElementById('counter');
             beaut.onclick= function()
@@ -18,7 +18,7 @@ button.onclick= function()
                 var span=document.getElementById('count');
                 span.innerHTML=counter.toString();
                 
-            }; 
+            }; */
 
 /*var button=document.getElementById('counter');
 button.onclick = function()
