@@ -18,7 +18,7 @@ articleOne:{
             </p>
             <p>
                 Even after all this time I still wonder
-            </p>https://cloud.imad.hasura.io/code/files/server.js
+            </p>
             <p>
                 Why we can't move on, just the way you did so easily
             </p>
