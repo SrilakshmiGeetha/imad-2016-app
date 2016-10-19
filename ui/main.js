@@ -9,12 +9,3 @@ button.onclick= function()
     var span=documemnt.getElementById("times");
     span.innerHTML=counter.toString();
 };*/
- counter=0;
-            var beaut=document.getElementById("yes");
-            beaut.onclick= function()
-            {
-                counter=counter+1;
-                var span=document.getElementById("times");
-                span.innerHTML=counter.toString();
-                
-            }; 
