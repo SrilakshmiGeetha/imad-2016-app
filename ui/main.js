@@ -9,18 +9,18 @@ button.onclick= function()
     console.log("SHIT");
     var span=documemnt.getElementById("times");
     span.innerHTML=counter.toString();
-};
- counter=0;
-            var beaut=document.getElementById("yes");
+};*/
+        var counter=0;
+            var beaut=document.getElementById('counter');
             beaut.onclick= function()
             {
                 counter=counter+1;
-                var span=document.getElementById("times");
+                var span=document.getElementById('count');
                 span.innerHTML=counter.toString();
                 
-            }; */
+            }; 
 
-var button=document.getElementById('counter');
+/*var button=document.getElementById('counter');
 button.onclick = function()
 {
     var request=new XMLHttpRequest();
@@ -39,4 +39,4 @@ button.onclick = function()
     request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-
+*/
