@@ -133,7 +133,7 @@ var count=0;
 app.get('/:articleName', function (req, res) {
     count=count+1;
     var articleName=req.params.articleName;
-    res.send(count.toString());
+  //  res.send(count.toString());
     res.send(createpage(articles[articleName]));
   
 });
