@@ -1,5 +1,6 @@
 console.log('Loaded!');
 var element=document.getElementById('image');
-element.onclick=functio(){
+element.onclick=function()
+{
  element.style.marginLeft='100px';   
-}
+};
