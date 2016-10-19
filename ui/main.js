@@ -28,6 +28,7 @@ button.onclick = function()
     {
         if(request.readyState===XMLHttpRequest.Done)
         {
+            console.log("SWEET JESUS");
                 if(request.status==200)
                 {
                         var counter=request.responseText;
