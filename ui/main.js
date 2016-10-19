@@ -1,3 +1,10 @@
+var element=document.getElementById('image');
+element.onclick= function()
+{
+    alert("TRALALALALALLA");
+};
+
+
 /*var counter=0;
 var button=document.getElementById("yes");
 
@@ -20,8 +27,6 @@ button.onclick= function()
             }; */
 
 var button=document.getElementById('counter');
-
-
 button.onclick = function()
 {
     var request=new XMLHttpRequest();
