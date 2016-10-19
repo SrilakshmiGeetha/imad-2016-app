@@ -1,5 +1,6 @@
-var counter=0;
+/*var counter=0;
 var button=document.getElementById("yes");
+
 button.onclick= function()
 {
     counter=counter+1;
@@ -7,4 +8,4 @@ button.onclick= function()
     console.log("SHIT");
     var span=documemnt.getElementById("times");
     span.innerHTML=counter.toString();
-};
+};*/
