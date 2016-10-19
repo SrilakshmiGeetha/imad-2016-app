@@ -12,5 +12,5 @@ button.onclick= function()
 var beaut=document.getElementById("yes");
 beaut.onclick= function()
 {
-    alert("Hail the almighty");
+    alert("!!!!");
 };
