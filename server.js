@@ -129,10 +129,12 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-
+var count=0;
 app.get('/:articleName', function (req, res) {
+    count=count+1;
     var articleName=req.params.articleName;
   res.send(createpage(articles[articleName]));
+  res.send(count.tostring());
 });
 app.get('/ui/main.js',function(req,res){
 
