@@ -1,9 +1,3 @@
-var butttons=document.getElementById('counter');
-butttons.onclick= function()
-{
-    alert("TRALALALALALLA");
-};
-
 
 /*var counter=0;
 var button=document.getElementById("yes");
@@ -26,7 +20,7 @@ button.onclick= function()
                 
             }; */
 
-/*var button=document.getElementById('counter');
+var button=document.getElementById('counter');
 button.onclick = function()
 {
     var request=new XMLHttpRequest();
@@ -46,4 +40,3 @@ button.onclick = function()
     request.send(null);
 };
 
-*/
