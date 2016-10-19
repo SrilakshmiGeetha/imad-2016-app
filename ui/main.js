@@ -1,5 +1,5 @@
 var butttons=document.getElementById('counter');
-buttons.onclick= function()
+butttons.onclick= function()
 {
     alert("TRALALALALALLA");
 };
