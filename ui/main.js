@@ -29,7 +29,6 @@ button.onclick = function()
         
         if(request.readyState === XMLHttpRequest.DONE)
         {
-               alert("REALLY");
                 if(request.status===200)
                 {
                         var counter=request.responseText;
