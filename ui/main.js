@@ -28,8 +28,7 @@ button.onclick = function()
     {
         if(request.readyState===XMLHttpRequest.Done)
         {
-            alert("UH HM");
-                if(request.status==200)
+                if(request.status===200)
                 {
                         var counter=request.responseText;
                         var span=document.getElementById('count');
