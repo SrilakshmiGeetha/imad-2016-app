@@ -138,6 +138,12 @@ app.get('/:articleName', function (req, res) {
     res.send(createpage(articles[articleName]));
   
 });*/
+var count=0;
+app.get('/:Counter', function (req, res) {
+    count=count+1;
+    res.send(count.toString());
+  
+});
 app.get('/ui/main.js',function(req,res){
 
     res.sendFile(path.join(__dirname, 'ui', 'main.js'));
