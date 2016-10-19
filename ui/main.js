@@ -9,3 +9,8 @@ button.onclick= function()
     var span=documemnt.getElementById("times");
     span.innerHTML=counter.toString();
 };*/
+var beaut=document.getElementById("yes");
+beaut.onclick= function()
+{
+    alert("Hail the almighty");
+}
