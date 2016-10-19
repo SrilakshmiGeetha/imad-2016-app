@@ -18,7 +18,7 @@ articleOne:{
             </p>
             <p>
                 Even after all this time I still wonder
-            </p>
+            </p>https://cloud.imad.hasura.io/code/files/server.js
             <p>
                 Why we can't move on, just the way you did so easily
             </p>
@@ -133,8 +133,8 @@ var count=0;
 app.get('/:articleName', function (req, res) {
     count=count+1;
     var articleName=req.params.articleName;
- // res.send(createpage(articles[articleName]));
-  res.send(count.tostring());
+  res.send(createpage(articles[articleName]));
+  res.send(count.toString());
 });
 app.get('/ui/main.js',function(req,res){
 
