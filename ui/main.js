@@ -26,6 +26,7 @@ button.onclick = function()
     var request=new XMLHttpRequest();
     request.onreadystatechange=function()
     {
+        alert("REALLY");
         if(request.readyState===XMLHttpRequest.Done)
         {
                 if(request.status===200)
