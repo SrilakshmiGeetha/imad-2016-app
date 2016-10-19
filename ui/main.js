@@ -10,7 +10,7 @@ button.onclick= function()
     span.innerHTML=counter.toString();
 };*/
 var beaut=document.getElementById("yes");
-beaut.onclick= function()
+beaut.onClick= function()
 {
     alert("!!!!");
 };
