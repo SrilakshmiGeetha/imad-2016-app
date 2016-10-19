@@ -1,6 +1,6 @@
 var counter=0;
-var x=document.getElementById('Press');
-x.onclick= function()
+var button=document.getElementById('Press');
+button.onclick= function()
 {
     counter=counter+1;
     var span=documemnt.getElementById('times');
