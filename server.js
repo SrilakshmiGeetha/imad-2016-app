@@ -128,17 +128,13 @@ app.get('/counter', function (req, res) {
   
 });
 var names=[];
-var i=0;
+
 app.get('/submit-name/:name',function(req,res)
 {
     var name=req.params.name;
-    names[i]=name.value;
-    res.send(names[i]);
-    i++;
-    for(var j=0;j<names.length;j++)
-    {
-        res.send(names[i]);
-    }
+    names.push(name);
+    res.send(JSON.stringify(names));
+    
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
