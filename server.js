@@ -132,8 +132,8 @@ var i=0;
 app.get('/submit-name/:name',function(req,res)
 {
     var name=req.params.name;
-    res.send(name);
     names[i]=name.value;
+    res.send(names[i]);
     i++;
     for(var j=0;j<names.length;j++)
     {
