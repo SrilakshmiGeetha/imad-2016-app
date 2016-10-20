@@ -42,3 +42,14 @@ button.onclick = function()
     request.send(null);
 };
 
+ var x=document.getElementById("button");
+
+ x.onclick=function()
+ {
+     var names=['name1','name2','name3','name4'];
+     var list='';
+     for(var i=0;i<names.length;i++)
+     {
+        list+='<li>'+names[i]+'</li>';
+     }
+};
