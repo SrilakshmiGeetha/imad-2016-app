@@ -132,7 +132,7 @@ var i=0;
 app.get('/submit-name/:name',function(req,res)
 {
     var name=req.params.name;
-    names[i]=name.value;
+    names[i]=name;
     i++;
     for(var j=0;j<names.length;j++)
     {
