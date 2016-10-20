@@ -53,3 +53,5 @@ button.onclick = function()
         list+='<li>'+names[i]+'</li>';
      }
 };
+var y=document.getElementById("list");
+y.innerHTML=list;
