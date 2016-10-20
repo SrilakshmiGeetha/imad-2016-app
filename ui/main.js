@@ -1,26 +1,5 @@
 
-/*var counter=0;
-var button=document.getElementById("yes");
-
-button.onclick= function()
-{
-    counter=counter+1;
-    alert("Hello");
-    console.log("SHIT");
-    var span=documemnt.getElementById("times");
-    span.innerHTML=counter.toString();
-};
-        var counter=0;
-            var beaut=document.getElementById('counter');
-            beaut.onclick= function()
-            {
-                counter=counter+1;
-                var span=document.getElementById('count');
-                span.innerHTML=counter.toString();
-                
-            }; */
-
-var button=document.getElementById('counter');
+/*var button=document.getElementById('counter');
 button.onclick = function()
 {
     var request=new XMLHttpRequest();
@@ -38,7 +17,7 @@ button.onclick = function()
                 }
         }
     };
-    request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/counter',true);
+    request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/sumbit-name/name?=',true);
     request.send(null);
 };
 
@@ -55,3 +34,4 @@ button.onclick = function()
      var y=document.getElementById("list");
     y.innerHTML=list;
 };
+*/
