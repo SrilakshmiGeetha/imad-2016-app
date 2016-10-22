@@ -22,6 +22,7 @@ button.onclick = function()
 };
 
  var x=document.getElementById("button");
+ 
  x.onclick=function()
  {
     var request=new XMLHttpRequest();
@@ -45,7 +46,9 @@ button.onclick = function()
             }
         }
     };
-    request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/sumbit-name?name=' + name ,true);
+    var nameInput=document.getElementById('name');
+    var namee=nameInput.value;
+    request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/sumbit-name?name=' + namee ,true);
     request.send(null);
      
 };
