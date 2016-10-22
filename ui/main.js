@@ -48,7 +48,7 @@ button.onclick = function()
     };
     var nameInput=document.getElementById('name');
     var namee=nameInput.value;
-    request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/sumbit-name?name=' + namee ,true);
+    request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/submit-name?name=' + namee ,true);
     request.send(null);
      
 };
