@@ -45,7 +45,7 @@ button.onclick = function()
             }
         }
     };
-     request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/sumbit-name/:name',true);
+     request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/sumbit-name/:name' + name ,true);
     request.send(null);
      
 };
