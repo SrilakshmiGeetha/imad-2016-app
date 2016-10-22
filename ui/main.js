@@ -25,7 +25,7 @@ button.onclick = function()
  
  x.onclick=function()
  {
-    var request=new XMLHttpRequest();
+   var request=new XMLHttpRequest();
     request.onreadystatechange=function()
     {
         
@@ -49,6 +49,6 @@ button.onclick = function()
     var nameInput=document.getElementById('name');
     var namee=nameInput.value;
     request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/sumbit-name?name=' + namee ,true);
-  //  request.send(null);
+    request.send(null);
      
 };
