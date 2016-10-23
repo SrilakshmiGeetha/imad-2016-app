@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articles=
+/*var articles=
 {
 articleOne:{
     date:'October 7 2016',
@@ -79,7 +79,7 @@ articleThree:{
             </p>
             `
 }; 
-*/
+
 function createpage(data)
 {
     var date=data.date;
@@ -118,25 +118,36 @@ function createpage(data)
     return htmltemplate;    
 }
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
+
+
 var counter=0;
 app.get('/counter', function (req, res) {
     counter=counter+1;
     res.send(counter.toString());
   
 });
+/*var count=0;
+app.get('/:articleName', function (req, res) {
+    count=count+1;
+    var articleName=req.params.articleName;
+  //  res.send(count.toString());
+    res.send(createpage(articles[articleName]));
+  
+});
 
+*/
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
 var names=[];
-
-app.get('/submit-name',function(req,res)
+app.get('/submit-name/:name',function(req,res)
 {
-    var name=req.query.name;
+    var name=req.params.name;
     names.push(name);
     res.send(JSON.stringify(names));
     
 });
+
 app.get('/ui/main.js',function(req,res){
 
     res.sendFile(path.join(__dirname, 'ui', 'main.js'));
@@ -149,14 +160,6 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-/*var count=0;
-app.get('/:articleName', function (req, res) {
-    count=count+1;
-    var articleName=req.params.articleName;
-  //  res.send(count.toString());
-    res.send(createpage(articles[articleName]));
-  
-});*/
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
