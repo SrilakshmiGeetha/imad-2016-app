@@ -11,12 +11,13 @@ function moveRight()
 {
     marginheli=marginheli-20;
     x.style.marginLeft=marginheli+ 'px';
-     if(z===1)
+     if((z===1)&&(Top<=1000))
     {
         Top=Top+ 20;
-        y.style.marginTop=Top+'px';
         y.style.width=50;
         y.style.height=50;
+        y.style.marginTop=Top+'px';
+       
     }
     document.addEventListener("keydown", function(event)
     {
