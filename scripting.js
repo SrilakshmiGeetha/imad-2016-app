@@ -10,3 +10,7 @@ x.onclick=function()
 {
     var interval=setInterval(moveRight,100); 
 };
+document.addEventListener("keydown", function(event)
+{
+  console.log(event.which);
+});
