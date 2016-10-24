@@ -1,1 +1,16 @@
+body {
+    font-family: Garamond;
+    background-color: Azure;
+    margin-top: 75px;
+    color:black;
+}
+
+.text-big {
+    font-size: 400%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 
