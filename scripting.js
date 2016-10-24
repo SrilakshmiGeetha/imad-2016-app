@@ -1,20 +1,36 @@
 var x=document.getElementById("heli");
 x.style.marginLeft='1000px';
-var margin=1000;
+var y=document.getElementById("packet");
+y.style.marginLeft='1000px';
+
+var marginheli=1000;
+var marginpack=998;
+var z=0;
+var Top=0;
 function moveRight()
 {
-    margin=margin-20;
-    x.style.marginLeft=margin+ 'px';
+    marginheli=marginheli-20;
+    x.style.marginLeft=marginheli+ 'px';
+    if(z===0)
+    {
+        y.style.marginLeft=marginpack+ 'px';
+    }
+    else if(z===1)
+    {
+        Top=Top+ 20;
+        y.style.marginTop=Top+'px';
+    }
+    document.addEventListener("keydown", function(event)
+    {
+        console.log(event.which);
+        if(event.which==13)
+        {
+            z=1;
+            
+        }
+    });
 }
 x.onclick=function()
 {
     var interval=setInterval(moveRight,100); 
 };
-document.addEventListener("keydown", function(event)
-{
-  console.log(event.which);
-  if(event.which==13)
-  {
-        console.log("HAHAHAH");
-  }
-});
