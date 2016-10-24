@@ -8,6 +8,7 @@ var marginheli=1000;
 var marginpack=998;
 var z=0;
 var Top=0;
+var Bottom=300;
 
 function moveRight()
 {
@@ -20,10 +21,11 @@ function moveRight()
     else if((z===1)&&(Top<=500))
     {
         Top=Top+ 20;
+        Bottom=Bottom-20;
         y.style.width='50px';
         y.style.height='50px';
         y.style.marginTop=Top+'px';
-        pic.style.marginTop=pic.style.marginTop-(Top+'px');
+        pic.style.marginTop=Bottom+ 'px';
        
     }
     document.addEventListener("keydown", function(event)
