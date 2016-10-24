@@ -1,2 +1,2 @@
 var x=document.getElementById("heli");
-x.marginLeft='400 px';
+x.marginLeft='800 px';
