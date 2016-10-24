@@ -14,8 +14,8 @@ function moveRight()
      if((z===1)&&(Top<=1000))
     {
         Top=Top+ 20;
-        y.style.width="50";
-        y.style.height="50";
+        y.style.width='50px';
+        y.style.height='50px';
         y.style.marginTop=Top+'px';
        
     }
