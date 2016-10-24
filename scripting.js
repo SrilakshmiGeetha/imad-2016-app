@@ -13,4 +13,8 @@ x.onclick=function()
 document.addEventListener("keydown", function(event)
 {
   console.log(event.which);
+  if(event.which==13)
+  {
+        console.log("HAHAHAH");
+  }
 });
