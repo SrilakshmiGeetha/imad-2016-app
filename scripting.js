@@ -11,7 +11,11 @@ function moveRight()
 {
     marginheli=marginheli-20;
     x.style.marginLeft=marginheli+ 'px';
-     if((z===1)&&(Top<=1000))
+    if(z===0)
+    {
+        y.style.marginLeft=marginheli+ 'px';   
+    }
+    else if((z===1)&&(Top<=500))
     {
         Top=Top+ 20;
         y.style.width='50px';
