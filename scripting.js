@@ -23,6 +23,7 @@ function moveRight()
         y.style.width='50px';
         y.style.height='50px';
         y.style.marginTop=Top+'px';
+        pic.style.marginTop=pic.style.marginTop-Top;
        
     }
     document.addEventListener("keydown", function(event)
