@@ -141,6 +141,10 @@ app.get('/', function (req, res) {
 });
 app.get('/setting.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'setting.css'));
+ app.get('/flood2.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'flood2.png'));
+});
+
 });
 app.get('/scripting.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'scripting.js'));
