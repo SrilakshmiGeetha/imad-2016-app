@@ -139,10 +139,13 @@ app.get('/:articleName', function (req, res) {
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname,'layout.html'));
 });
-
+app.get('/setting.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'setting.css'));
+});
 app.get('/scripting.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'scripting.js'));
 });
+
 app.get('/submit-name/:name',function(req,res)
 {
     var name=req.params.name;
