@@ -6,7 +6,7 @@ y.style.marginLeft='1000px';
 var pic=document.getElementById("marquee-container");
 pic.style.marginTop='300px';
 
-var marginheli=1000;
+var marginheli=0;
 var marginpack=998;
 var z=0;
 var Top=0;
@@ -17,7 +17,7 @@ function moveRight()
 {
     if(marginheli<=2)
     marginheli=1000;
-    marginheli=marginheli-20;
+    marginheli=marginheli+20;
     floodmargin1=floodmargin1-10;
      pic.style.marginLeft=floodmargin1+ 'px';
     x.style.marginLeft=marginheli+ 'px';
