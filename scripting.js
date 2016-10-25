@@ -9,10 +9,21 @@ var marginpack=998;
 var z=0;
 var Top=0;
 var Bottom=320;
-function drop()
+function moveRight()
 {
-      if(Top<=500)
+    marginheli=marginheli-20;
+    x.style.marginLeft=marginheli+ 'px';
+    if(z===0)
     {
+        y.style.marginLeft=marginheli+ 'px';   
+    }
+    
+   else if((z==1)&&(Top<=500))
+    {
+        /*for(var s=z;s>0;s++)
+        {
+        
+        }*/
         Top=Top+ 20;
         Bottom=Bottom-20;
          y.style.marginTop=Top+'px';
@@ -22,22 +33,12 @@ function drop()
        
        
     }
-}
-function moveRight()
-{
-    marginheli=marginheli-20;
-    x.style.marginLeft=marginheli+ 'px';
-    if(z===0)
-    {
-        y.style.marginLeft=marginheli+ 'px';   
-    }
-   
     document.addEventListener("keydown", function(event)
     {
         console.log(event.which);
         if(event.which==13)
         {
-            z=1;
+            z++;
             
         }
     });
