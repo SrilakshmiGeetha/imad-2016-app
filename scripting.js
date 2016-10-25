@@ -13,12 +13,16 @@ var z=0;
 var Top=0;
 var Bottom=320;
 var floodmargin1=0;
-var floodmargin2=0;
+var floodmargin2=1000;
 function moveRight()
 {
     if(marginheli<=2)
     marginheli=1000;
     marginheli=marginheli-20;
+    floodmargin1=floodmargin1+5;
+    floodmargin2=floodmargin1-5;
+    pic1.style.marginLeft=floodmargin1+ 'px';
+    pic2.style.marginRight=floodmargin2+ 'px';
     x.style.marginLeft=marginheli+ 'px';
     if(z===0)
     {
