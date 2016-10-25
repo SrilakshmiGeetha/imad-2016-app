@@ -18,10 +18,10 @@ function moveRight()
     if(marginheli<=2)
     marginheli=1000;
     marginheli=marginheli-20;
-    floodmargin1=floodmargin1+10;
-    
+    floodmargin1=floodmargin1-10;
+     pic.style.marginLeft=floodmargin+ 'px';
     x.style.marginLeft=marginheli+ 'px';
-    pic.style.marginRight=floodmargin1 + 'px';
+ 
     if(z===0)
     {
         y.style.marginLeft=marginheli+ 'px';   
