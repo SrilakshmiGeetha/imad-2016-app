@@ -38,7 +38,7 @@ function moveRight()
         console.log(event.which);
         if(event.which==13)
         {
-            z++;
+            z=1;
             
         }
     });
