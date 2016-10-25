@@ -15,7 +15,6 @@ body {
 
 .container{
     display:inline-block;
-    overflow: hidden;
-    white-space: nowrap;
+    
 }
 
