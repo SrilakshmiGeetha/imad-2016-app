@@ -1,5 +1,5 @@
 var x=document.getElementById("heli");
-x.style.marginLeft='1000px';
+x.style.marginLeft='0px';
 var y=document.getElementById("packet");
 y.style.marginLeft='1000px';
 
@@ -15,8 +15,8 @@ var floodmargin1=0;
 var floodmargin2=1000;
 function moveRight()
 {
-    if(marginheli<=2)
-    marginheli=1000;
+    if(marginheli>=1000)
+    marginheli=0;
     marginheli=marginheli+20;
     floodmargin1=floodmargin1-10;
      pic.style.marginLeft=floodmargin1+ 'px';
