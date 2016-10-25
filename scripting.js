@@ -9,6 +9,8 @@ var marginpack=998;
 var z=0;
 var Top=0;
 var Bottom=320;
+var a=[];
+var i=0;
 function moveRight()
 {
     marginheli=marginheli-20;
@@ -18,15 +20,11 @@ function moveRight()
         y.style.marginLeft=marginheli+ 'px';   
     }
     
-   else if((z==1)&&(Top<=500))
+   else if((z>=1)&&(Top<=500))
     {
-        /*for(var s=z;s>0;s++)
-        {
         
-        }*/
         Top=Top+ 20;
         Bottom=Bottom-20;
-         y.style.marginTop=Top+'px';
         pic.style.marginTop=Bottom+ 'px';
         y.style.width='50px';
         y.style.height='50px';
@@ -38,7 +36,8 @@ function moveRight()
         console.log(event.which);
         if(event.which==13)
         {
-            z=1;
+            y.style.marginLeft=marginheli+ 'px'; 
+            z++;
             
         }
     });
