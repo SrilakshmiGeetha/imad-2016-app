@@ -37,7 +37,11 @@ function moveRight()
         console.log(event.which);
         if(event.which==13)
         {
-            y.style.marginLeft=marginheli+ 'px'; 
+            if(Top>500)
+            {
+                y.style.marginLeft=marginheli+ 'px'; 
+                Top=0;
+            }
             z++;
             
         }
