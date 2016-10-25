@@ -13,6 +13,8 @@ var a=[];
 var i=0;
 function moveRight()
 {
+    if(marginheli<=2)
+    marginheli=1000;
     marginheli=marginheli-20;
     x.style.marginLeft=marginheli+ 'px';
     if(z===0)
