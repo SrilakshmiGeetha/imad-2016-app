@@ -3,8 +3,8 @@ x.style.marginLeft='1000px';
 var y=document.getElementById("packet");
 y.style.marginLeft='1000px';
 
-var pic=document.getElementById("floods1");
-pic.style.marginTop='300px';
+/*var pic=document.getElementById("floods1");
+pic.style.marginTop='300px';*/
 
 var marginheli=1000;
 var marginpack=998;
@@ -19,7 +19,7 @@ function moveRight()
     marginheli=1000;
     marginheli=marginheli-20;
     floodmargin1=floodmargin1+10;
-     pic.style.marginLeft=floodmargin1+ 'px';
+  //   pic.style.marginLeft=floodmargin1+ 'px';
     x.style.marginLeft=marginheli+ 'px';
  
     if(z===0)
@@ -33,7 +33,7 @@ function moveRight()
         Top=Top+ 20;
         Bottom=Bottom-20;
         y.style.marginTop=Top+ 'px';
-        pic.style.marginTop=Bottom+ 'px';
+    //    pic.style.marginTop=Bottom+ 'px';
         y.style.width='50px';
         y.style.height='50px';
        
