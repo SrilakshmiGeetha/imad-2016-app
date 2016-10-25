@@ -2,8 +2,8 @@ var x=document.getElementById("heli");
 x.style.marginLeft='1000px';
 var y=document.getElementById("packet");
 y.style.marginLeft='1000px';
-var pic1=document.getElementById("flood1");
-pic1.style.marginTop='300px';
+//var pic1=document.getElementById("flood1");
+//pic1.style.marginTop='300px';
 var pic2=document.getElementById("flood2");
 pic2.style.marginTop='300px';
 
@@ -35,7 +35,7 @@ function moveRight()
         Top=Top+ 20;
         Bottom=Bottom-20;
         y.style.marginTop=Top+ 'px';
-        pic1.style.marginTop=Bottom+ 'px';
+     //   pic1.style.marginTop=Bottom+ 'px';
         pic2.style.marginTop=Bottom+ 'px';
         y.style.width='50px';
         y.style.height='50px';
