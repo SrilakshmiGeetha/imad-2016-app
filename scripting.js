@@ -19,9 +19,9 @@ function moveRight()
     if(marginheli<=2)
     marginheli=1000;
     marginheli=marginheli-20;
-    floodmargin1=floodmargin1+5;
+  //  floodmargin1=floodmargin1+5;
     floodmargin2=floodmargin1-5;
-    pic1.style.marginLeft=floodmargin1+ 'px';
+ //   pic1.style.marginLeft=floodmargin1+ 'px';
     pic2.style.marginRight=floodmargin2+ 'px';
     x.style.marginLeft=marginheli+ 'px';
     if(z===0)
@@ -36,6 +36,7 @@ function moveRight()
         Bottom=Bottom-20;
         y.style.marginTop=Top+ 'px';
         pic1.style.marginTop=Bottom+ 'px';
+        pic2.style.marginTop=Bottom+ 'px';
         y.style.width='50px';
         y.style.height='50px';
        
