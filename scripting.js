@@ -15,7 +15,7 @@ var floodmargin1=0;
 var floodmargin2=1000;
 function moveRight()
 {
-    if(marginheli>=1000)
+    if(marginheli>=1200)
     marginheli=0;
     marginheli=marginheli+20;
     floodmargin1=floodmargin1-10;
