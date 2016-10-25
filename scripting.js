@@ -9,16 +9,9 @@ var marginpack=998;
 var z=0;
 var Top=0;
 var Bottom=320;
-
-function moveRight()
+function drop()
 {
-    marginheli=marginheli-20;
-    x.style.marginLeft=marginheli+ 'px';
-    if(z===0)
-    {
-        y.style.marginLeft=marginheli+ 'px';   
-    }
-    else if((z===1)&&(Top<=500))
+      if(Top<=500)
     {
         Top=Top+ 20;
         Bottom=Bottom-20;
@@ -29,6 +22,16 @@ function moveRight()
        
        
     }
+}
+function moveRight()
+{
+    marginheli=marginheli-20;
+    x.style.marginLeft=marginheli+ 'px';
+    if(z===0)
+    {
+        y.style.marginLeft=marginheli+ 'px';   
+    }
+   
     document.addEventListener("keydown", function(event)
     {
         console.log(event.which);
