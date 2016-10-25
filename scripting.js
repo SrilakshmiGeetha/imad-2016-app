@@ -3,7 +3,7 @@ x.style.marginLeft='1000px';
 var y=document.getElementById("packet");
 y.style.marginLeft='1000px';
 
-var pic=document.getElementById("floods");
+var pic=document.getElementById("floods1");
 pic.style.marginTop='300px';
 
 var marginheli=1000;
