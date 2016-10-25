@@ -41,6 +41,7 @@ function moveRight()
             {
                 y.style.marginLeft=marginheli+ 'px'; 
                 Top=0;
+                Bottom=320;
             }
             z++;
             
