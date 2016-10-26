@@ -8,11 +8,6 @@ body {
 .text-big {
     font-size: 400%;
 }
-.img-hor-vert {
-    
-        filter: FlipH;
-    
-}
 
 .bold {
     font-weight: bold;
