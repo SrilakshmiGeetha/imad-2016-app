@@ -30,8 +30,8 @@ function moveRight()
    else if((z>=1)&&(Top<=500))
     {
         
-        Top=Top+ 15;
-        Bottom=Bottom-15;
+        Top=Top+ 10;
+        Bottom=Bottom-10;
         y.style.marginTop=Top+ 'px';
        pic.style.marginTop=Bottom+ 'px';
         y.style.width='50px';
