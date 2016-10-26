@@ -2,7 +2,7 @@ var x=document.getElementById("heli");
 x.style.marginLeft='0px';
 var y=document.getElementById("packet");
 y.style.marginLeft='1000px';
-
+y.style.marginTop='0px';
 var pic=document.getElementById("marquee-container");
 pic.style.marginTop='260px';
 
