@@ -31,7 +31,7 @@ function moveRight()
     {
         
         Top=Top+ 20;
-        Bottom=Bottom-15;
+        Bottom=Bottom-20;
         y.style.marginTop=Top+ 'px';
        pic.style.marginTop=Bottom+ 'px';
         y.style.width='50px';
