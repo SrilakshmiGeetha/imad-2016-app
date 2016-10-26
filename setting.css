@@ -13,11 +13,7 @@ body {
 .bold {
     font-weight: bold;
 }
-.helicop
-{
- 
-    transform:rotate(180 deg);
-}
+
 #marquee-container 
 {
  margin: 0 auto; /* centers it */
