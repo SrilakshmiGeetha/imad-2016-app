@@ -9,18 +9,14 @@ body {
     font-size: 400%;
 }
 
-.img-hor {
-    -moz-transform: scale(-1, -1);
-    -o-transform: scale(-1, -1);
-    -webkit-transform: scale(-1, -1);
-    transform: scale(-1, -1);
-    -ms-filter: "FlipH";
-}
 
 .bold {
     font-weight: bold;
 }
-
+#heli {
+ 
+    transform:rotate(180deg);
+}
 #marquee-container 
 {
  margin: 0 auto; /* centers it */
