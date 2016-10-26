@@ -16,7 +16,10 @@ body {
     transform: scale(-1, -1);
     -ms-filter: "FlipH";
 }
-
+#heli {
+    background-color:lightblue;
+    transform:rotate(10deg);
+}
 .bold {
     font-weight: bold;
 }
