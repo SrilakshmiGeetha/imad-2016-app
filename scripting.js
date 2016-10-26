@@ -4,7 +4,7 @@ var y=document.getElementById("packet");
 y.style.marginLeft='1000px';
 
 var pic=document.getElementById("marquee-container");
-pic.style.marginTop='300px';
+pic.style.marginTop='260px';
 
 var marginheli=0;
 var marginpack=998;
