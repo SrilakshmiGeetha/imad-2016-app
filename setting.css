@@ -15,7 +15,7 @@ body {
 }
 #heli {
  
-    transform:rotate(90 deg);
+    transform:rotate(180 deg);
 }
 #marquee-container 
 {
