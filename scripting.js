@@ -47,11 +47,7 @@ function moveRight()
             Top=0;
             Bottom=320;
             }
-    if(Top>=500)
-    {
-            pic.style.width=0;
-            pic.style.height=0;
-    }
+ 
     document.addEventListener("keydown", function(event)
     {
         console.log(event.which);
