@@ -39,17 +39,25 @@ function moveRight()
        
        
     }
+     if(Top>500)
+        {
+            y.style.marginLeft=marginheli+ 'px';
+            y.style.width=0;
+            y.style.height=0;
+            Top=0;
+            Bottom=320;
+            }
+    if(Top>=500)
+    {
+            pic.style.width=0;
+            pic.style.height=0;
+    }
     document.addEventListener("keydown", function(event)
     {
         console.log(event.which);
         if(event.which==13)
         {
-            if(Top>500)
-            {
-                y.style.marginLeft=marginheli+ 'px'; 
-                Top=0;
-                Bottom=320;
-            }
+         
             z++;
             
         }
