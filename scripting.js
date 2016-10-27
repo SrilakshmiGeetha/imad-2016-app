@@ -58,7 +58,7 @@ function moveRight()
         if(event.which==13)
         {
          
-            z++;
+            z=1;
             
         }
     });
