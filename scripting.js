@@ -33,7 +33,7 @@ function moveRight()
         Top=Top+ 10;
         Bottom=Bottom-10;
         y.style.marginTop=Top+ 'px';
-       pic.style.marginTop=Bottom+ 'px';
+        pic.style.marginTop=Bottom+ 'px';
         y.style.width='50px';
         y.style.height='50px';
        
