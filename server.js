@@ -159,22 +159,6 @@ app.get('/:articleName', function (req, res) {
     res.send(createpage(articles[articleName]));
   
 });
-
-*/
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname,'layout.html'));
-});
-app.get('/setting.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'setting.css'));
- app.get('/floods.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'floods.png'));
-});
-
-});
-app.get('/scripting.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'scripting.js'));
-});
-
 app.get('/submit-name/:name',function(req,res)
 {
     var name=req.params.name;
@@ -182,20 +166,23 @@ app.get('/submit-name/:name',function(req,res)
     res.send(JSON.stringify(names));
     
 });
-/*
+
 app.get('/ui/main.js',function(req,res){
 
     res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});*/
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-
-app.get('/oie_transparent.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'oie_transparent.png.'));
+*/
+app.get('/Layout.html',function(req,res)
+{
+    res.sendFine(_dirname,'Layout.html');
 });
-
-
+app.get('/setting.css',function(req,res)
+{
+    res.sendFine(_dirname,'setting.css');
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
