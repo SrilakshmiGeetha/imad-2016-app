@@ -15,7 +15,7 @@ var config=
     password: process.env.DB_PASSWORD
 };
 var pool= new Pool(config);
-var array='';
+var array={};
 app.get('/test',function(req,res)
 {
     console.log("connection made");
@@ -34,10 +34,15 @@ app.get('/test',function(req,res)
                 res.status(404).send('Not found');
             }
             else
-            res.send(JSON.stringify(result.Name));
+            {
+                res.send(JSON.stringify(result));
+                array=result;
+            }
         }
+        
     });
 });
+res.send(array.Name);
 console.log(array);
 var articles=
 {
