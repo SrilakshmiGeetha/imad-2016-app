@@ -35,12 +35,14 @@ app.get('/test',function(req,res)
             }
             else
             {
+                array=result;
                 res.send(JSON.stringify(result.rows));
                 
             }
         }
         
     });
+    res.send(array.Name);
 });
 
 var articles=
