@@ -1,9 +1,34 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
+var Pool=require('pq').Pool;
 var app = express();
 app.use(morgan('combined'));
+
+var config=
+{
+    user:'srilakshmigeetha',
+    database:'srilakshmigeetha',
+    host:'db.imad.hasura-app.io',
+    port:'5432',
+    password:process.env.DB_PASSWORD
+};
+var pool=new Pool(config);
+app.get('/test',function(err,result)
+{
+pool.query('Select * FROM Personalities',function(err,result)
+{
+    if(err)
+    {
+        res.status(500).send(err.toString());
+    }
+    else
+    {
+        res.send(JSON.stringify(result));
+    }
+});
+    
+});
 /*var articles=
 {
 articleOne:{
