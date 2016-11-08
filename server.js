@@ -20,7 +20,7 @@ function template(array)
 {
     var id=array.id;
     var name=data.Name;
-    var template=
+    var templates=
     `
     <html>
     <head>
@@ -43,7 +43,7 @@ function template(array)
     </body>
     </html>
     `
-    return template;    
+    return templates;    
 }
 app.get('/test',function(req,res)
 {
