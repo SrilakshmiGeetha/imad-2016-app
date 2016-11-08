@@ -35,7 +35,6 @@ app.get('/test',function(req,res)
             }
             else
             {
-               // array=result;
                 res.send(JSON.stringify(result));
                 
             }
@@ -43,7 +42,7 @@ app.get('/test',function(req,res)
         
     });
 });
-//res.send(JSON.stringify(array.Name));
+
 var articles=
 {
 articleOne:{
