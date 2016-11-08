@@ -15,10 +15,11 @@ var config=
     password: process.env.DB_PASSWORD
 };
 var pool= new Pool(config);
+var array='';
 app.get('/test',function(req,res)
 {
     console.log("connection made");
-    pool.query('SELECT * FROM personalities',function(err,result)
+    pool.query('SELECT * FROM personalities WHERE id=3',function(err,result)
     {
       if(err)
         {
@@ -33,10 +34,11 @@ app.get('/test',function(req,res)
                 res.status(404).send('Not found');
             }
             else
-            res.send(JSON.stringify(result));
+            array+=JSON.stringify(result);
         }
     });
 });
+console.log(array);
 var articles=
 {
 articleOne:{
