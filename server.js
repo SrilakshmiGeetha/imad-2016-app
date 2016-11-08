@@ -171,7 +171,7 @@ app.get('/submit-name/:name',function(req,res)
 
 app.get('/',function(req,res)
 {
-    res.sendFine(_dirname,'index.html');
+    res.sendFine(_dirname,'ui','index.html');
 });
 app.get('/Layout.html',function(req,res)
 {
