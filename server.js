@@ -149,7 +149,7 @@ app.get('/',function(req,res)
 });
 app.get('/favicon.ico',function(req,res)
 {
-    res.sendFine(_dirname,'favicon.ico');
+    res.sendFile(_dirname,'favicon.ico');
 });
 
 var counter=0;
