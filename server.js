@@ -15,32 +15,7 @@ var config=
     password: process.env.DB_PASSWORD
 };
 var pool= new Pool(config);
-function template(array)
-{
-   // res.send(JSON.stringify(array));
-    var id=array.id;
-    var name=array.Name;
-    var templates=
-    `
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
-            <div>
-                ${id}
-            </div>
-            <div>
-                ${name}
-            </div>
-        </div>
-    </body>
-    </html>
-    `
-    return templates;    
-}
+
 
 app.get('/test',function(req,res)
 {
@@ -71,6 +46,32 @@ app.get('/test',function(req,res)
         }
         
     });
+    function template(array)
+{
+   // res.send(JSON.stringify(array));
+    var id=array.id;
+    var name=array.Name;
+    var templates=
+    `
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                ${id}
+            </div>
+            <div>
+                ${name}
+            </div>
+        </div>
+    </body>
+    </html>
+    `
+    return templates;    
+}
   
 });
 
