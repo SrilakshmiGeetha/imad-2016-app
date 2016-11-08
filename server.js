@@ -145,7 +145,7 @@ function createpage(data)
 }
 app.get('/',function(req,res)
 {
-    res.sendFine(path.join(__dirname,'ui','index.html'));
+    res.sendFile(path.join(__dirname,'ui','index.html'));
 });
 app.get('/favicon.ico',function(req,res)
 {
