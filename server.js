@@ -27,8 +27,9 @@ app.get('/test',function(err,result)
         {
             if(result.rows.length === 0)
             {
-                res.status(404).send("Not found");
+                res.status(404).send('Not found');
             }
+            else
             res.send(JSON.stringify(result));
         }
     });
