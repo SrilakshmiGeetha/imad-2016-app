@@ -167,17 +167,15 @@ app.get('/submit-name/:name',function(req,res)
     
 });
 
-app.get('/ui/main.js',function(req,res){
 
-    res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
 */
 app.get('/',function(req,res)
 {
     res.sendFine(_dirname,'index.html');
+});
+app.get('/Layout.html',function(req,res)
+{
+    res.sendFine(_dirname,'Layout.html');
 });
 app.get('/setting.css',function(req,res)
 {
@@ -186,6 +184,13 @@ app.get('/setting.css',function(req,res)
 app.get('/data.js',function(req,res){
 
     res.sendFile(path.join(__dirname, 'data.js'));
+});
+app.get('/ui/main.js',function(req,res){
+
+    res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
