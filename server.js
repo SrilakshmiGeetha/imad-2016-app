@@ -18,7 +18,7 @@ var pool= new Pool(config);
 app.get('/test',function(req,res)
 {
     console.log("connection made");
-    pool.query('SELECT * FROM test',function(err,result)
+    pool.query('SELECT * FROM personalities',function(err,result)
     {
       if(err)
         {
