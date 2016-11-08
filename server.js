@@ -36,8 +36,10 @@ app.get('/test',function(req,res)
             else
             {
                 var array=result;
+                var char=array.Name;
               //  res.send(JSON.stringify(result.rows));
-                res.send(JSON.stringify(array.id));
+                res.send(JSON.stringify(array));
+                res.send(char);
                 
             }
         }
