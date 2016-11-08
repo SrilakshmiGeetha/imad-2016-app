@@ -1,12 +1,12 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-//var Pool = require('pg').Pool;
+var Pool = require('pg').Pool;
 
 var app = express();
 app.use(morgan('combined'));
 
-/*var config=
+var config=
 {
     user: 'srilakshmigeetha',
     database: 'srilakshmigeetha',
@@ -34,7 +34,7 @@ app.get('/test',function(req,res)
             res.send(JSON.stringify(result));
         }
     });
-});*/
+});
 var articles=
 {
 articleOne:{
