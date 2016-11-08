@@ -17,22 +17,21 @@ var config=
 var pool= new Pool(config);
 app.get('/test',function(err,result)
 {
-pool.query('SELECT * FROM Personalities',function(err,result)
-{
-    if(err)
+    pool.query('SELECT * FROM Personalities',function(err,result)
     {
-        res.status(500).send(err.toString());
-    }
-    else
-    {
-        if(result.wrongs.length === 0)
+      if(err)
         {
-            res.status(404).send("Not found");
+            res.status(500).send(err.toString());
         }
-        res.send(JSON.stringify(result));
-    }
-});
-    
+        else
+        {
+            if(result.rows.length === 0)
+            {
+                res.status(404).send("Not found");
+            }
+            res.send(JSON.stringify(result));
+        }
+    });
 });
 var articles=
 {
