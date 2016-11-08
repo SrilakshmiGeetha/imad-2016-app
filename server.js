@@ -85,7 +85,7 @@ articleThree:{
             </p> `
 }
 };
-/*var articleOne=
+var articleOne=
 {
     date:'October 7 2016',
     heading: 'Article One',
@@ -103,7 +103,7 @@ articleThree:{
                 Why we can't move on, just the way you did so easily
             </p>
             `
-}; 
+}; */
 
 function createpage(data)
 {
@@ -151,7 +151,7 @@ app.get('/counter', function (req, res) {
     res.send(counter.toString());
   
 });
-/*var count=0;
+var count=0;
 app.get('/:articleName', function (req, res) {
     count=count+1;
     var articleName=req.params.articleName;
@@ -168,7 +168,7 @@ app.get('/submit-name/:name',function(req,res)
 });
 
 
-*/
+
 app.get('/',function(req,res)
 {
     res.sendFine(_dirname,'index.html');
