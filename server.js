@@ -18,6 +18,7 @@ var pool= new Pool(config);
 
 function template(array)
 {
+    res.send(JSON.stringify(array));
     var id=array.id;
     var name=array.Name;
     var templates=
