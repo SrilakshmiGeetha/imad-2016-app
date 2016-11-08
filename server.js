@@ -36,13 +36,13 @@ app.get('/test',function(req,res)
             else
             {
                 res.send(JSON.stringify(result));
-                array=result;
+               // array=result;
             }
         }
         
     });
 });
-res.send(array.Name);
+//res.send(array.Name);
 console.log(array);
 var articles=
 {
