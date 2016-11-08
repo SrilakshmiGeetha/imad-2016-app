@@ -142,7 +142,10 @@ function createpage(data)
     `
     return htmltemplate;    
 }
-
+app.get('/',function(req,res)
+{
+    res.sendFine(_dirname,'ui','index.html');
+});
 app.get('/favicon.ico',function(req,res)
 {
     res.sendFine(_dirname,'favicon.ico');
@@ -172,10 +175,7 @@ app.get('/submit-name/:name',function(req,res)
 
 
 
-app.get('/',function(req,res)
-{
-    res.sendFine(_dirname,'ui','index.html');
-});
+
 app.get('/Layout.html',function(req,res)
 {
     res.sendFine(_dirname,'Layout.html');
