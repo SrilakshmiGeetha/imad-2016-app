@@ -143,7 +143,10 @@ function createpage(data)
     return htmltemplate;    
 }
 
-
+app.get('/favicon.ico',function(req,res)
+{
+    res.sendFine(_dirname,'favicon.ico');
+});
 
 var counter=0;
 app.get('/counter', function (req, res) {
