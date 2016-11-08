@@ -43,8 +43,7 @@ app.get('/test',function(req,res)
         
     });
 });
-res.send(JSON.stringify(array.Name));
-console.log(array);
+//res.send(JSON.stringify(array.Name));
 var articles=
 {
 articleOne:{
