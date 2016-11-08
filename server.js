@@ -1,12 +1,12 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool=require('pq').Pool;
+//var Pool=require('pq').Pool;
 
 var app = express();
 app.use(morgan('combined'));
 
-var config=
+/*var config=
 {
     user:'srilakshmigeetha',
     database:'srilakshmigeetha',
@@ -29,7 +29,7 @@ pool.query('Select * FROM Personalities',function(err,result)
     }
 });
     
-});
+});*/
 var articles=
 {
 articleOne:{
