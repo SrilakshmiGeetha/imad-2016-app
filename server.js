@@ -133,7 +133,7 @@ var config=
     password: process.env.DB_PASSWORD
 };
 var pool= new Pool(config);
-app.get('/test',function(err,result)
+app.get('/test',function(req,res)
 {
     console.log("connection made");
     pool.query('SELECT * FROM Personalities',function(err,result)
