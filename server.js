@@ -177,7 +177,7 @@ app.get('/ui/style.css', function (req, res) {
 */
 app.get('/',function(req,res)
 {
-    res.sendFine(_dirname,'Layout.html');
+    res.sendFine(_dirname,'index.html');
 });
 app.get('/setting.css',function(req,res)
 {
