@@ -16,6 +16,36 @@ var config=
 };
 var pool= new Pool(config);
 
+function template(array)
+{
+    var id=array.id;
+   
+    var name=data.Name;
+    var htmltemplate=
+    `
+    <html>
+    <head>
+        <title>
+            ${title}
+        </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+
+            <div>
+                ${id}
+            </div>
+            <div>
+                ${name}
+            </div>
+        </div>
+    </body>
+    </html>
+    `
+    return htmltemplate;    
+}
 app.get('/test',function(req,res)
 {
     console.log("connection made");
@@ -36,10 +66,10 @@ app.get('/test',function(req,res)
             else
             {
                 var array=result;
-                var chara=array.Name;
+                template(array);
               //  res.send(JSON.stringify(result.rows));
               //  res.send(JSON.stringify(array));
-                res.send(chara);
+                
                 
             }
         }
