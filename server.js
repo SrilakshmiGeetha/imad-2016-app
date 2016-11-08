@@ -44,7 +44,7 @@ function template(array)
     </body>
     </html>
     `
-    return htmltemplate;    
+    return template;    
 }
 app.get('/test',function(req,res)
 {
@@ -66,7 +66,7 @@ app.get('/test',function(req,res)
             else
             {
                 var array=result;
-                template(array);
+                res.send(template(array));
               //  res.send(JSON.stringify(result.rows));
               //  res.send(JSON.stringify(array));
                 
