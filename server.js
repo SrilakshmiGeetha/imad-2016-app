@@ -1,12 +1,12 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool=require('pq').Pool;
+//var Pool=require('pq').Pool;
 
 var app = express();
 app.use(morgan('combined'));
 
-var config=
+/*var config=
 {
     user:'srilakshmigeetha',
     database:'srilakshmigeetha',
@@ -29,8 +29,8 @@ pool.query('Select * FROM Personalities',function(err,result)
     }
 });
     
-});
-/*var articles=
+});*/
+var articles=
 {
 articleOne:{
     date:'October 7 2016',
@@ -104,7 +104,7 @@ var articleOne=
                 Why we can't move on, just the way you did so easily
             </p>
             `
-}; */
+}; 
 
 function createpage(data)
 {
