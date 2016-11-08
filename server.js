@@ -34,7 +34,7 @@ app.get('/test',function(req,res)
                 res.status(404).send('Not found');
             }
             else
-            res.send(JSON.stringify(result.rows));
+            res.send(JSON.stringify(result.Name));
         }
     });
 });
