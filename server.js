@@ -19,7 +19,7 @@ var pool= new Pool(config);
 function template(array)
 {
     var id=array.id;
-    var name=data.Name;
+    var name=array.Name;
     var templates=
     `
     <html>
