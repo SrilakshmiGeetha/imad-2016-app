@@ -35,7 +35,7 @@ app.get('/test',function(req,res)
             }
             else
             {
-                array=result;
+               // array=result;
                 res.send(JSON.stringify(result));
                 
             }
