@@ -22,7 +22,7 @@ app.get('/test',function(req,res)
     {
       if(err)
         {
-            res.status(500).send(err.toString());
+            res.status(502).send(err.toString());
         }
         else
         {
