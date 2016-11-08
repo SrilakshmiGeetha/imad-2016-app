@@ -42,7 +42,7 @@ app.get('/test',function(req,res)
         }
         
     });
-    res.send(array.Name);
+    res.send(JSON.stringify(array.Name));
 });
 
 var articles=
