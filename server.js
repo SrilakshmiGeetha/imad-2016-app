@@ -6,7 +6,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-/*var config=
+var config=
 {
     user:'srilakshmigeetha',
     database:'srilakshmigeetha',
@@ -29,7 +29,7 @@ pool.query('Select * FROM Personalities',function(err,result)
     }
 });
     
-});*/
+});
 var articles=
 {
 articleOne:{
