@@ -6,34 +6,7 @@ var Pool = require('pg').Pool;
 var app = express();
 app.use(morgan('combined'));
 
-var config=
-{
-    user: 'srilakshmigeetha',
-    database: 'srilakshmigeetha',
-    host: 'db.imad.hasura-app.io',
-    port:'5432',
-    password: process.env.DB_PASSWORD
-};
-var pool= new Pool(config);
-app.get('/test',function(err,result)
-{
-    pool.query('SELECT * FROM Personalities',function(err,result)
-    {
-      if(err)
-        {
-            res.status(500).send(err.toString());
-        }
-        else
-        {
-            if(result.rows.length === 0)
-            {
-                res.status(404).send('Not found');
-            }
-            else
-            res.send(JSON.stringify(result));
-        }
-    });
-});
+
 var articles=
 {
 articleOne:{
@@ -150,6 +123,34 @@ function createpage(data)
 app.get('/',function(req,res)
 {
     res.sendFile(path.join(__dirname,'ui','index.html'));
+});
+var config=
+{
+    user: 'srilakshmigeetha',
+    database: 'srilakshmigeetha',
+    host: 'db.imad.hasura-app.io',
+    port:'5432',
+    password: process.env.DB_PASSWORD
+};
+var pool= new Pool(config);
+app.get('/test',function(err,result)
+{
+    pool.query('SELECT * FROM Personalities',function(err,result)
+    {
+      if(err)
+        {
+            res.status(500).send(err.toString());
+        }
+        else
+        {
+            if(result.rows.length === 0)
+            {
+                res.status(404).send('Not found');
+            }
+            else
+            res.send(JSON.stringify(result));
+        }
+    });
 });
 app.get('/favicon.ico',function(req,res)
 {
