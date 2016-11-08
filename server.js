@@ -135,6 +135,7 @@ var config=
 var pool= new Pool(config);
 app.get('/test',function(err,result)
 {
+    console.log("connection made");
     pool.query('SELECT * FROM Personalities',function(err,result)
     {
       if(err)
