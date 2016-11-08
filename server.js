@@ -17,7 +17,7 @@ var config=
 var pool=new Pool(config);
 app.get('/test',function(err,result)
 {
-pool.query('Select * FROM Personalities',function(err,result)
+pool.query('SELECT * FROM Personalities',function(err,result)
 {
     if(err)
     {
