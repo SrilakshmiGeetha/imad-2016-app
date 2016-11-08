@@ -15,10 +15,9 @@ var config=
     password: process.env.DB_PASSWORD
 };
 var pool= new Pool(config);
-
 function template(array)
 {
-    res.send(JSON.stringify(array));
+   // res.send(JSON.stringify(array));
     var id=array.id;
     var name=array.Name;
     var templates=
@@ -42,6 +41,7 @@ function template(array)
     `
     return templates;    
 }
+
 app.get('/test',function(req,res)
 {
     console.log("connection made");
