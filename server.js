@@ -58,7 +58,7 @@ pool.query('SELECT * FROM personalities WHERE id<3',function(err,result)
         else
         {
             var array=result.rows[0];
-            template(array);
+            res.send(template(array));
             //     res.send(JSON.stringify(result[0]));
              //   res.send(JSON.stringify(array));
         }
