@@ -16,7 +16,7 @@ function template(array)
 {
    // res.send(JSON.stringify(array));
    
-   var iddd=array.id;
+    var iddd=array.id;
     var namesss=array.Name;
     idd.innerHTML=idd.toString();
     namess.innerHTML=namesss.toString();
