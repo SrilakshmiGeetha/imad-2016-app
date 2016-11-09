@@ -1,12 +1,13 @@
 var peeps=document.getElementById('people');
+var insert=document.getElementById('insertion');
 peeps.onclick=function()
 {
-var Pool = require('pg').Pool;
-var config=
-{
-    user: 'srilakshmigeetha',
-    database: 'srilakshmigeetha',
-    host: 'db.imad.hasura-app.io',
+    var Pool = require('pg').Pool;
+    var config=
+    {
+     user: 'srilakshmigeetha',
+     database: 'srilakshmigeetha',
+     host: 'db.imad.hasura-app.io',
     port:'5432',
     password: process.env.DB_PASSWORD
 };
@@ -37,6 +38,7 @@ function template(array)
     </body>
     </html>
     `
+    insert.innerHTML=templates;
     return templates;    
 }
   
