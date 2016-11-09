@@ -20,6 +20,7 @@ function template(array)
     var namesss=array.Name;
     idd.innerHTML=idd.toString();
     namess.innerHTML=namesss.toString();
+    res.send(array.Name);
 }
 pool.query('SELECT * FROM personalities WHERE id<3',function(err,result)
 {
