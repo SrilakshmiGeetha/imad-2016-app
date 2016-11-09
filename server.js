@@ -65,10 +65,10 @@ app.get('/test',function(req,res)
             }
             else
             {
-                 var array=result;
-                 res.send(template(array[0]));
+                 var array=result.rows[0];
+                 res.send(template(array));
             //     res.send(JSON.stringify(result[0]));
-                res.send(JSON.stringify(array));
+             //   res.send(JSON.stringify(array));
                 
                 
             }
