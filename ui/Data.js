@@ -20,13 +20,20 @@ function template(array)
     var id=array.id;
     var name=array.Name;
     var templates=
-    `
+    `<html>
+    <head>
+        <body>
             <div>
                 ${id}
             </div>
             <div>
                 ${name}
             </div>
+        </div>
+    </body>
+    </html>
+    
+           
     `
     insert.innerHTML=templates;
 }
