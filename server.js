@@ -68,7 +68,7 @@ app.get('/test',function(req,res)
                  var array=result;
               //   res.send(template(array));
             //     res.send(JSON.stringify(result[0]));
-                res.send(JSON.stringify(array."id"));
+                res.send(JSON.stringify(array.'id'));
                 
                 
             }
