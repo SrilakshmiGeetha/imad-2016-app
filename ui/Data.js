@@ -24,7 +24,7 @@ pool.query('SELECT * FROM personalities WHERE id<3',function(err,result)
   if(err)
     {
         console.log("Hello");
-        res.status(500).send(err.toString())
+        res.status(500).send(err.toString());
     }
     else
     {
