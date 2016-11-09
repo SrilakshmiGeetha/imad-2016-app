@@ -17,37 +17,6 @@ var config=
 var pool= new Pool(config);
 
 
-app.get('/test',function(req,res)
-{
-    console.log("connection made");
-    pool.query('SELECT * FROM personalities WHERE id<3',function(err,result)
-    {
-      if(err)
-        {
-            console.log("Hello");
-            res.status(500).send(err.toString());
-            
-        }
-        else
-        {
-            if(result.rows.length === 0)
-            {
-                res.status(404).send('Not found');
-            }
-            else
-            {
-            //    var array=result.rows;
-           //     res.send(template(array));
-                 res.send(JSON.stringify(result[0]));
-              //  res.send(JSON.stringify(array));
-                
-                
-            }
-        }
-        
-    });
-});
-    
 function template(array)
 {
    // res.send(JSON.stringify(array));
@@ -77,6 +46,37 @@ function template(array)
   
 
 
+app.get('/test',function(req,res)
+{
+    console.log("connection made");
+    pool.query('SELECT * FROM personalities WHERE id<3',function(err,result)
+    {
+      if(err)
+        {
+            console.log("Hello");
+            res.status(500).send(err.toString());
+            
+        }
+        else
+        {
+            if(result.rows.length === 0)
+            {
+                res.status(404).send('Not found');
+            }
+            else
+            {
+                 var array=result;
+              //   res.send(template(array));
+            //     res.send(JSON.stringify(result[0]));
+                res.send(JSON.stringify(array[0]));
+                
+                
+            }
+        }
+        
+    });
+});
+    
 var articles=
 {
 articleOne:{
