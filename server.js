@@ -27,7 +27,6 @@ function template(array)
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
-        <
             <div>
                 ${id}
             </div>
