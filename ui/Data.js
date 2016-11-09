@@ -1,6 +1,6 @@
 var peeps=document.getElementById('people');
 var id=document.getElementById('idd');
-var name=document.getElementById('namee');
+var names=document.getElementById('namee');
 peeps.onclick=function()
 {
     var Pool = require('pg').Pool;
@@ -20,7 +20,7 @@ function template(array)
 {
    // res.send(JSON.stringify(array));
    id.innerHTML=array.id;
-   name.innerHTML=array.Name;
+   names.innerHTML=array.Name;
     
 }
   
