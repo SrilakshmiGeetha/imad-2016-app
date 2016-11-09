@@ -36,7 +36,7 @@ app.get('/test',function(req,res)
             }
             else
             {
-                var array=result;
+                var array=result.rows;
                 res.send(template(array));
               //  res.send(JSON.stringify(result.rows));
               //  res.send(JSON.stringify(array));
