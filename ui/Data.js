@@ -2,19 +2,16 @@
 var id=document.getElementById('idd');
 var names=document.getElementById('namee');
 
-    var Pool = require('pg').Pool;
-    var config=
-    {
-     user: 'srilakshmigeetha',
-     database: 'srilakshmigeetha',
-     host: 'db.imad.hasura-app.io',
+var Pool = require('pg').Pool;
+var config=
+{
+    user: 'srilakshmigeetha',
+    database: 'srilakshmigeetha',
+    host: 'db.imad.hasura-app.io',
     port:'5432',
     password: process.env.DB_PASSWORD
-    };
+};
 var pool= new Pool(config);
-
-    
-
 function template(array)
 {
    // res.send(JSON.stringify(array));
@@ -22,31 +19,26 @@ function template(array)
    names.innerHTML=array.Name;
     
 }
-  
-    pool.query('SELECT * FROM personalities WHERE id<3',function(err,result)
+pool.query('SELECT * FROM personalities WHERE id<3',function(err,result)
+{
+  if(err)
     {
-      if(err)
+        console.log("Hello");
+        res.status(500).send(err.toString())
+    }
+    else
+    {
+        if(result.rows.length === 0)
         {
-            console.log("Hello");
-            res.status(500).send(err.toString());
-            
+            res.status(404).send('Not found');
         }
         else
         {
-            if(result.rows.length === 0)
-            {
-                res.status(404).send('Not found');
-            }
-            else
-            {
-                 var array=result.rows[0];
-                template(array);
+            var array=result.rows[0];
+            template(array);
             //     res.send(JSON.stringify(result[0]));
              //   res.send(JSON.stringify(array));
-                
-                
-            }
         }
+    }
         
-    });
-}
+});
