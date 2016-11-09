@@ -21,25 +21,14 @@ function template(array)
     var name=array.Name;
     var templates=
     `
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
             <div>
                 ${id}
             </div>
             <div>
                 ${name}
             </div>
-        </div>
-    </body>
-    </html>
     `
     insert.innerHTML=templates;
-    return templates;    
 }
   
 
@@ -63,7 +52,7 @@ function template(array)
             else
             {
                  var array=result.rows[0];
-                 res.send(template(array));
+                template(array);
             //     res.send(JSON.stringify(result[0]));
              //   res.send(JSON.stringify(array));
                 
