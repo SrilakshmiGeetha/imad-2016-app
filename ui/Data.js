@@ -1,8 +1,7 @@
-var peeps=document.getElementById('people');
+
 var id=document.getElementById('idd');
 var names=document.getElementById('namee');
-peeps.onclick=function()
-{
+
     var Pool = require('pg').Pool;
     var config=
     {
@@ -24,10 +23,6 @@ function template(array)
     
 }
   
-
-
-
-    console.log("connection made");
     pool.query('SELECT * FROM personalities WHERE id<3',function(err,result)
     {
       if(err)
