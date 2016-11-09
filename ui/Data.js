@@ -1,3 +1,6 @@
+var peeps=document.getElementById('people');
+peeps.onclick=function()
+{
 var Pool = require('pg').Pool;
 var config=
 {
@@ -67,3 +70,4 @@ function template(array)
         }
         
     });
+}
