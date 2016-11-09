@@ -1,5 +1,6 @@
 var peeps=document.getElementById('people');
-var insert=document.getElementById('insertion');
+var id=document.getElementById('idd');
+var name=document.getElementById('namee');
 peeps.onclick=function()
 {
     var Pool = require('pg').Pool;
@@ -10,32 +11,17 @@ peeps.onclick=function()
      host: 'db.imad.hasura-app.io',
     port:'5432',
     password: process.env.DB_PASSWORD
-};
+    };
 var pool= new Pool(config);
 
+    
 
 function template(array)
 {
    // res.send(JSON.stringify(array));
-    var id=array.id;
-    var name=array.Name;
-    var templates=
-    `<html>
-    <head>
-        <body>
-            <div>
-                ${id}
-            </div>
-            <div>
-                ${name}
-            </div>
-        </div>
-    </body>
-    </html>
+   id.innerHTML=array.id;
+   name.innerHTML=array.Name;
     
-           
-    `
-    insert.innerHTML=templates;
 }
   
 
