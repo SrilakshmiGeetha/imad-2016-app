@@ -15,8 +15,8 @@ var pool= new Pool(config);
 function template(array)
 {
    // res.send(JSON.stringify(array));
-   id.innerHTML=array.id;
-   names.innerHTML=array.Name;
+   id.innerHTML=array.id.toString();
+   names.innerHTML=array.Name.toString();
     
 }
 pool.query('SELECT * FROM personalities WHERE id<3',function(err,result)
