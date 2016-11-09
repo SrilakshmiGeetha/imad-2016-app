@@ -121,7 +121,7 @@ function createpage(data)
 }
 app.get('/',function(req,res)
 {
-    res.sendFile(path.join(__dirname,'ui','index.html'));
+    res.sendFile(path.join(__dirname,'ui','Layout.html'));
 });
 app.get('/ui/Data.js',function(req,res){
 
