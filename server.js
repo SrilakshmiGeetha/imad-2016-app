@@ -15,38 +15,7 @@ var config=
     password: process.env.DB_PASSWORD
 };
 var pool= new Pool(config);
-
-
-app.get('/test',function(req,res)
-{
-    console.log("connection made");
-    pool.query('SELECT * FROM personalities WHERE id=3',function(err,result)
-    {
-      if(err)
-        {
-            console.log("Hello");
-            res.status(500).send(err.toString());
-            
-        }
-        else
-        {
-            if(result.rows.length === 0)
-            {
-                res.status(404).send('Not found');
-            }
-            else
-            {
-                var array=result;
-                res.send(template(array));
-              //  res.send(JSON.stringify(result.rows));
-              //  res.send(JSON.stringify(array));
-                
-                
-            }
-        }
-        
-    });
-    function template(array)
+function template(array)
 {
    // res.send(JSON.stringify(array));
     var id=array.id;
@@ -75,6 +44,37 @@ app.get('/test',function(req,res)
   
 });
 
+
+app.get('/test',function(req,res)
+{
+    console.log("connection made");
+    pool.query('SELECT * FROM personalities WHERE id=3',function(err,result)
+    {
+      if(err)
+        {
+            console.log("Hello");
+            res.status(500).send(err.toString());
+            
+        }
+        else
+        {
+            if(result.rows.length === 0)
+            {
+                res.status(404).send('Not found');
+            }
+            else
+            {
+                var array=result.rows;
+                res.send(template(array));
+              //  res.send(JSON.stringify(result.rows));
+              //  res.send(JSON.stringify(array));
+                
+                
+            }
+        }
+        
+    });
+    
 var articles=
 {
 articleOne:{
