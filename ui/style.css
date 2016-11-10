@@ -31,9 +31,10 @@ body {
 {
     
     width: 100px;
-    height: 50px;
+    height: 100px;
     color: Bisque;
     background-color:SaddleBrown;
+    font-size: 400%;
    
 
 }
