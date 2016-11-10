@@ -1,5 +1,5 @@
 
-var button=document.getElementById('counter');
+/*var button=document.getElementById('counter');
 button.onclick = function()
 {
     var request=new XMLHttpRequest();
@@ -19,9 +19,7 @@ button.onclick = function()
     };
     request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/counter',true);
     request.send(null);
-};
-
- var x=document.getElementById("button");
+     var x=document.getElementById("button");
  
  x.onclick=function()
  {
@@ -50,6 +48,36 @@ button.onclick = function()
     var namee=nameInput.value;
     request.open('GET','http://srilakshmigeetha.imad.hasura-app.io/submit-name?name=' + namee ,true);
     request.send(null);
+     
+};
+
+};*/
+
+ var x=document.getElementById("button");
+ 
+ x.onclick=function()
+ {
+   var request=new XMLHttpRequest();
+    request.onreadystatechange=function()
+    {
+        
+        if(request.readyState === XMLHttpRequest.DONE)
+        {
+            
+            if(request.status===200)
+            {
+                alert("created");
+            }
+            else if(request.status===500)
+            {
+                alert("something went wrong");
+            }
+        }
+    };
+    var username=document.getElementById('username').value;
+    var password=document.getElementById('password').value;
+    request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/create-user' ,true);
+    request.send(JSON.stringify({username:username, password:password}));
      
 };
 
