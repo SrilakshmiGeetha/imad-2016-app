@@ -27,9 +27,15 @@ body {
                 color: blue; 
                 font-family: comics sans;
             }
-.header
+.header1
 {
     margin-Left:300px;
+    color:SaddleBrown;
+    
+}
+.header2
+{
+    margin-Left:400px;
     color:SaddleBrown;
     
 }
