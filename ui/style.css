@@ -35,20 +35,26 @@ body {
     color: Bisque;
     background-color:SaddleBrown;
     font-size: 150%;
-    margin-Top:400px;
+    
    
 
+}
+.head
+{
+    margin-Left:200px;
+    color:SaddleBrown;
 }
 .sign
 {
     margin-Left:200px;
-   height:100px;
+   height:60px;
    width:200px;
 }
 #button1
 {
    
     margin-Left:270px;
+    margin-Top:400px;
      
 }
 #button2
@@ -56,6 +62,7 @@ body {
 
     
     margin-Left:300px;
+    margin-Top:400px;
     
 }
 
