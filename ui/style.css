@@ -32,13 +32,16 @@ body {
     margin-Left:285px;
     color:SaddleBrown;
     font-size:300%;
-    
+    font-style:Italic;
+    font-weight:bold;    
 }
 .header2
 {
     margin-Left:320px;
     color:SaddleBrown;
     font-size:300%;
+    font-style:Italic;
+    font-weight:bold; 
 }
 .enter
 {
@@ -48,7 +51,7 @@ body {
     color: Bisque;
     background-color:SaddleBrown;
     font-size: 150%;
-    margin-top:15px;
+    margin-top:20px;
 }
 .head
 {
