@@ -27,3 +27,9 @@ body {
                 color: blue; 
                 font-family: comics sans;
             }
+#button
+{
+    width: 100px;
+    height: 100px;
+    color: blue;
+}
