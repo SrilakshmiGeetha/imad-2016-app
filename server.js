@@ -162,6 +162,7 @@ app.post('/create-user',function(req,res)
         }
    });
 });
+/*
 app.post('/login',function(req,res)
 {
    var username=req.body.username;
@@ -191,7 +192,7 @@ app.post('/login',function(req,res)
         }
    });
 });
-    
+    */
 app.get('/ui/favicon.ico',function(req,res)
 {
     res.sendFile(path.join(__dirname,'ui','favicon.ico'));
