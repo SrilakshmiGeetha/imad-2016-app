@@ -101,6 +101,8 @@ var y=document.getElementById("button1");
             {
                 alert("your account is created");
             }
+             else if(request.status === 403)
+              alert("INCORRECT");
             else if(request.status===500)
             {
                 alert("something went wrong");
