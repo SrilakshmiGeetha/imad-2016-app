@@ -51,7 +51,7 @@ button.onclick = function()
      
 };
 
-};*/
+};*//*
 var y=document.getElementById("button1");
  
  y.onclick=function()
@@ -84,7 +84,7 @@ var y=document.getElementById("button1");
 };
 
 
-
+*/
 
  var x=document.getElementById("button");
  
