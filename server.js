@@ -134,7 +134,7 @@ function createpage(data)
 function hash(input,salt)
 {
     var hashed=crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
-    return ["pbkdf2","1000",salt,hashed.toString('hex')].join('$');
+    return ["pbkdf2","10000",salt,hashed.toString('hex')].join('$');
 }
 app.get('/',function(req,res)
 {
