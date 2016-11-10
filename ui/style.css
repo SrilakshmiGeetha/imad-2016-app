@@ -27,6 +27,10 @@ body {
                 color: blue; 
                 font-family: comics sans;
             }
+.header
+{
+    margin-Left:300px;
+}
 .enter
 {
     
@@ -40,6 +44,10 @@ body {
 {
     margin-Left:200px;
     color:SaddleBrown;
+}
+.heading
+{
+    margin-Top:40px;
 }
 .sign
 {
