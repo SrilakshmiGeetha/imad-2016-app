@@ -161,7 +161,35 @@ app.post('/create-user',function(req,res)
         }
    });
 });
-
+app.post('/login',function(req,res)
+{
+   var username=req.body.username;
+   var password=req.body.password;
+   
+   pool.query('SELECT * FROM "user" WHERE username = ($1)', [username],function(err,result)
+   {console.log("hello");
+        if(err)
+        {
+            res.status(500).send(err.toString());
+        }
+        
+        else
+        {
+            var salt=crypto.randomBytes(128).toString('hex');
+            var hashedpassword=hash(password,salt);
+            var dbString=result.rows[0].password;
+            if(dbString===hashedpassword)
+            {
+                alert("credentials correct");
+            }
+            else
+            {
+                alert("incorrect credentials");
+            }
+            
+        }
+   });
+});
     
 app.get('/ui/favicon.ico',function(req,res)
 {
