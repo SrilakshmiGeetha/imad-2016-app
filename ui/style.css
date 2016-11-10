@@ -47,6 +47,11 @@ body {
    height:40px;
    width:200px;
 }
+.login
+{
+    margin-Left:500px;
+    color:SaddleBrown; 
+}
 .sub
 {
     width: 250px;
@@ -60,16 +65,15 @@ body {
 #button1
 {
    
-    margin-Left:270px;
-    margin-Top:400px;
+    margin-Left:500px;
      
 }
 #button2
 {
 
     
-    margin-Left:300px;
-    margin-Top:400px;
+    margin-Left:500px;
+    margin-Top:10px;
     
 }
 
