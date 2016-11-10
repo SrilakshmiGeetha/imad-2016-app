@@ -66,7 +66,7 @@ var y=document.getElementById("button1");
             
             if(request.status===200)
             {
-                alert("Loggin in");
+                alert("Logging in");
             }
             else if(request.status===500)
             {
