@@ -62,10 +62,17 @@ body {
     margin-Left:200px;
     margin-Top: 20px;
 }
+.sub2
+{
+    margin-Left:500px;
+     height:40px;
+    width:200px
+}
 #button1
 {
    
     margin-Left:500px;
+    margin-Top:10px;
      
 }
 #button2
