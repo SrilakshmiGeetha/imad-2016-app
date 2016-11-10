@@ -87,6 +87,7 @@ var y=document.getElementById("button1");
  
  y.onclick=function()
  {
+     alert("processing");
    var request=new XMLHttpRequest();
     request.onreadystatechange=function()
     {
