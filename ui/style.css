@@ -29,7 +29,9 @@ body {
             }
 #button
 {
+    
     width: 100px;
-    height: 100px;
-    color: blue;
+    height: 20px;
+    color: black;
+    background-color:white;
 }
