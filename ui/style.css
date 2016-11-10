@@ -35,9 +35,6 @@ body {
     color: Bisque;
     background-color:SaddleBrown;
     font-size: 150%;
-    
-   
-
 }
 .head
 {
@@ -47,8 +44,17 @@ body {
 .sign
 {
     margin-Left:200px;
-   height:60px;
+   height:40px;
    width:200px;
+}
+.sub
+{
+    width: 250px;
+    height: 100px;
+    color: Bisque;
+    background-color:SaddleBrown;
+    font-size: 150%;
+    margin-Left:200px;
 }
 #button1
 {
