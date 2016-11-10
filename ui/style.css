@@ -34,16 +34,17 @@ body {
     height: 50px;
     color: Bisque;
     background-color:SaddleBrown;
-    margin-top:500px;
    
 
 }
 #button1
 {
     margin-left: 400px;
+    margin-Top:400px;
 }
 #button2
 {
     margin-left: 300px;
+    margin-Top:400px;
 }
 
