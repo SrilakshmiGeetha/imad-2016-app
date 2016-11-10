@@ -166,6 +166,10 @@ app.get('/ui/favicon.ico',function(req,res)
 {
     res.sendFile(path.join(__dirname,'ui','favicon.ico'));
 });
+app.get('/ui/Layout.html',function(req,res){
+
+    res.sendFile(path.join(__dirname, 'ui', 'Layout.html'));
+});
 
 var counter=0;
 app.get('/counter', function (req, res) {
