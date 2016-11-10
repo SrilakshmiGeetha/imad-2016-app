@@ -66,7 +66,7 @@ button.onclick = function()
             
             if(request.status===200)
             {
-                alert("created");
+                alert("Your Account has been created")
             }
             else if(request.status===500)
             {
