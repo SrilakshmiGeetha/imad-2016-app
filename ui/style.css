@@ -29,7 +29,7 @@ body {
             }
 .header1
 {
-    margin-Left:290px;
+    margin-Left:285px;
     color:SaddleBrown;
     font-size:300%;
     
@@ -48,6 +48,7 @@ body {
     color: Bisque;
     background-color:SaddleBrown;
     font-size: 150%;
+    margin-top:15px;
 }
 .head
 {
