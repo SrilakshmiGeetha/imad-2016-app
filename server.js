@@ -14,7 +14,7 @@ var config=
     port:'5432',
     password: process.env.DB_PASSWORD
 };
-
+var pool=new Pool(config);
 
 var articles=
 {
@@ -158,7 +158,7 @@ app.post('/create-user',function(req,res)
         }
    });
 });
-var pool=new Pool(config);
+
     
 app.get('/ui/favicon.ico',function(req,res)
 {
