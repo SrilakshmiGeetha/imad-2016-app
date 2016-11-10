@@ -21,8 +21,8 @@ var y=document.getElementById("button1");
             }
         }
     };
-    var username=document.getElementById('username').value;
-    var password=document.getElementById('password').value;
+    var username=document.getElementById('username1').value;
+    var password=document.getElementById('password2').value;
     console.log(username);
     request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/login' ,true);
     request.setRequestHeader('Content-Type','application/json');
