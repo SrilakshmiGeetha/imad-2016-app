@@ -52,37 +52,6 @@ button.onclick = function()
 };
 
 };*/
-
- var x=document.getElementById("button");
- 
- x.onclick=function()
- {
-   var request=new XMLHttpRequest();
-    request.onreadystatechange=function()
-    {
-        
-        if(request.readyState === XMLHttpRequest.DONE)
-        {
-            
-            if(request.status===200)
-            {
-                alert("your account is created");
-            }
-            else if(request.status===500)
-            {
-                alert("something went wrong");
-            }
-        }
-    };
-    var username=document.getElementById('username').value;
-    var password=document.getElementById('password').value;
-    var email=document.getElementById('email').value;
-    console.log(username);
-    request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/create-user' ,true);
-    request.setRequestHeader('Content-Type','application/json');
-    request.send(JSON.stringify({username: username, password: password, email: email}));
-     
-};
 var y=document.getElementById("button1");
  
  y.onclick=function()
@@ -115,3 +84,35 @@ var y=document.getElementById("button1");
 };
 
 
+
+
+ var x=document.getElementById("button");
+ 
+ x.onclick=function()
+ {
+   var request=new XMLHttpRequest();
+    request.onreadystatechange=function()
+    {
+        
+        if(request.readyState === XMLHttpRequest.DONE)
+        {
+            
+            if(request.status===200)
+            {
+                alert("your account is created");
+            }
+            else if(request.status===500)
+            {
+                alert("something went wrong");
+            }
+        }
+    };
+    var username=document.getElementById('username').value;
+    var password=document.getElementById('password').value;
+    var email=document.getElementById('email').value;
+    console.log(username);
+    request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/create-user' ,true);
+    request.setRequestHeader('Content-Type','application/json');
+    request.send(JSON.stringify({username: username, password: password, email: email}));
+     
+};
