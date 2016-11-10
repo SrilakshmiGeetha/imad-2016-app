@@ -35,17 +35,19 @@ body {
     color: Bisque;
     background-color:SaddleBrown;
     font-size: 150%;
-    margin-Left: 350px;
+   
    
 
 }
 #button1
 {
     margin-Top:200px;
+     margin-Left: 350px;
 }
 #button2
 {
 
     margin-Top:30px;
+     margin-Left: 350px;
 }
 
