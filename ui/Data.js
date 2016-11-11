@@ -1,32 +1,23 @@
-var z=document.getElementById("add");
- 
- z.onclick=function()
- {
-     
-   var request=new XMLHttpRequest();
-    request.onreadystatechange=function()
+var request = new XMLHttpRequest();
+request.onreadystatechange = function () 
+{
+    if (request.readyState === XMLHttpRequest.DONE) {
+    var articles = document.getElementById('articles');
+    var title = document.getElementById('title');
+    if (request.status === 200) 
     {
+       
+         var articleData = JSON.parse(this.responseText);
+        articles.innerHTML = article.Data[0].description;
         
-        if(request.readyState === XMLHttpRequest.DONE)
+        title.innerHTML = article.Data[0].title;
+        } else
         {
-            
-            if(request.status===200)
-            {
-                alert("Logging in");
-            }
-            else if(request.status===500)
-            {
-                alert("something went wrong :(");
-            }
+            articles.innerHTML('Oops! Could not load all articles!');
         }
-    };
-    var username=document.getElementById('username1').value;
-    var password=document.getElementById('password1').value;
-    console.log(username);
-    request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/login' ,true);
-    request.setRequestHeader('Content-Type','application/json');
-   request.send(JSON.stringify({"username": username, "password": password}));
-     
+        request.open('GET', '/get-articles', true);
+        request.send(null);
+    }
 };
 /*
 var y=document.getElementById("button1");
