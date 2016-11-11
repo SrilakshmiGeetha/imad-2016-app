@@ -239,25 +239,14 @@ app.get('/ui/main.js',function(req,res){
 
     res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-app.get('/ui/foreground.png',function(req,res){
-
-    res.sendFile(path.join(__dirname, 'ui', 'foreground.png'));
-});
-app.get('/ui/background.png',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'background.png'));
-});
-app.get('/ui/midground.png',function(req,res){
-
-    res.sendFile(path.join(__dirname, 'ui', 'midground.png'));
-});
 
 app.get('/ui/style.css', function (req, res) 
 {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
  });
-app.get('/ui/Setting.css', function (req, res) 
+ app.get('/ui/Setting.css', function (req, res) 
 {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'Setting.css'));
  });
 
 
