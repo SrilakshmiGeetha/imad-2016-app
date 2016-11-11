@@ -208,7 +208,7 @@ app.get('/ui/Layout.html',function(req,res){
 
     res.sendFile(path.join(__dirname, 'ui', 'Layout.html'));
 });
-app.get('/ui/homepage.html',function(req,res){
+app.get('/ui/homepage',function(req,res){
 
     res.sendFile(path.join(__dirname, 'ui', 'homepage.html'));
 });
