@@ -276,8 +276,7 @@ app.get('/get-articles', function (req, res)
                     res.send(JSON.stringify(result.rows));
                  }
              }
-        
-             });
+            });
         }
   });
 });
