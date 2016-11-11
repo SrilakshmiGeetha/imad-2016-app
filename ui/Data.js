@@ -1,4 +1,5 @@
 var request = new XMLHttpRequest();
+console.log("hey");
 request.onreadystatechange = function () 
 {
     if (request.readyState === XMLHttpRequest.DONE) {
