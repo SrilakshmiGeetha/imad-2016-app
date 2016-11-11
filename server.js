@@ -244,6 +244,7 @@ app.get('/get-articles', function (req, res) {
          } 
          else
          {
+            console.log("WORKING2");
          var id=result[0].rows.count;
          pool.query("SELECT * FROM articles where count=$1 ",[id],function (err, result)
         { 
@@ -258,6 +259,8 @@ app.get('/get-articles', function (req, res) {
             }
          else 
          {
+             
+            console.log("WORKING3");
             var articleData = result.rows[0];
             res.send(JSON.stringify(result.rows));
          }
