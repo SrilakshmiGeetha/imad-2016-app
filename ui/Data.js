@@ -7,7 +7,7 @@ request.onreadystatechange = function ()
     var title = document.getElementById('title');
     if (request.status === 200) 
     {
-       
+       console.log("WORKING");
          var articleData = JSON.parse(this.responseText);
         articles.innerHTML = article.Data[0].description;
         
