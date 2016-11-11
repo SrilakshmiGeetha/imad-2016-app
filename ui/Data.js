@@ -1,5 +1,6 @@
-var request = new XMLHttpRequest();
 console.log("hey");
+var request = new XMLHttpRequest();
+
 request.onreadystatechange = function () 
 {
     if (request.readyState === XMLHttpRequest.DONE) {
@@ -14,6 +15,7 @@ request.onreadystatechange = function ()
         title.innerHTML = article.Data[0].title;
         } else
         {
+            CONSOLE.LOG("NOT WORKING");
             articles.innerHTML('Oops! Could not load all articles!');
         }
         request.open('GET', '/get-articles', true);
