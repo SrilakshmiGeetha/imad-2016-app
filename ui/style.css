@@ -73,6 +73,8 @@ body {
 }
 .sidebar
 {
+    width:200px;
+    height:900px;
     background-color:SaddleBrown;
 }
 .sub
