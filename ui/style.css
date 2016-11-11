@@ -1,5 +1,5 @@
 body {
-   background: url("http://www.eamped.com/images/stars-wallpaper/stars-wallpaper-7.jpg") repeat 5% 5%;
+   background: url("http://i3.wallpaperscraft.com/image/vintage_pens_writing_paper_74945_1280x1024.jpg") ;
    background-size:cover;
     font-family: Garamond;
     color:white;
@@ -26,7 +26,7 @@ body {
 .header1
 {
     margin-Left:285px;
-    color:white;
+    color:SaddleBrown;
     font-size:300%;
     font-style:Italic;
     font-weight:bold;    
@@ -34,7 +34,7 @@ body {
 .header2
 {
     margin-Left:320px;
-    color:white;
+    color:SaddleBrown;
     font-size:300%;
     font-style:Italic;
     font-weight:bold; 
@@ -45,7 +45,7 @@ body {
     width: 200px;
     height: 60px;
     color: Bisque;
-    background-color:RosyBrown;
+    background-color:SaddleBrown;
     font-size: 150%;
     margin-top:20px;
   
@@ -53,7 +53,7 @@ body {
 .head
 {
     margin-Left:200px;
-    color:white;
+    color:SaddleBrown;
 }
 .heading
 {
@@ -69,14 +69,14 @@ body {
 .login
 {
     margin-Left:500px;
-    color:white; 
+    color:SaddleBrown; 
 }
 .sub
 {
     width: 250px;
     height: 100px;
-    color:white;
-    background-color:RosyBrown;
+    color:bisque;
+    background-color:SaddleBrown;
     font-size: 150%;
     margin-Left:200px;
     margin-Top: 20px;
