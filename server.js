@@ -188,12 +188,12 @@ app.post('/login',function(req,res)
             if(dbString===hashedpassword)
             {
                 alert("credentials correct");
-                res.status(200).send("Succesfully created"+ username);
+                res.status(200).send("logged in");
             }
             else
             {
                 alert("incorrect credentials");
-                
+                 res.status(404).send("not logged in");
             }
             
         }
