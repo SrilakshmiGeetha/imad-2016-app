@@ -10,9 +10,7 @@ body {
 	to { background-position: 100% 0; }
 }
 
-#animate-area	{ 
-	width: 560px; 
-	height: 400px; 
+#full{ 
 	background-image: url("http://i3.wallpaperscraft.com/image/vintage_pens_writing_paper_74945_1280x1024.jpg");
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
