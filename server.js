@@ -208,11 +208,10 @@ app.get('/ui/Layout.html',function(req,res){
 
     res.sendFile(path.join(__dirname, 'ui', 'Layout.html'));
 });
-app.get('/ui/Data.js',function(req,res){
+app.get('/ui/homepage.html',function(req,res){
 
-    res.sendFile(path.join(__dirname, 'ui', 'Data.js'));
+    res.sendFile(path.join(__dirname, 'ui', 'homepage.html'));
 });
-
 
 var counter=0;
 app.get('/counter', function (req, res) {
