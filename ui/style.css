@@ -1,10 +1,26 @@
 body {
-    background-image:url("http://i3.wallpaperscraft.com/image/vintage_pens_writing_paper_74945_1280x1024.jpg");
-    background-size:cover; 
+   
     font-family: Garamond;
     color:black;
 }
-
+#full.animate {
+	animation-name: backg;
+	animation-duration: 10s;
+	animation-timing-function: ease;
+	animation-iteration-count: 200;
+}
+@keyframes backg
+{
+    0%{
+        background-image:url("http://i3.wallpaperscraft.com/image/vintage_pens_writing_paper_74945_1280x1024.jpg");
+        background-size:cover; 
+     }
+    100%
+     {
+         background-image:url("http://freedomwallpaper.com/wallpaper2/funky-wallpaper-hd.jpg");
+         background-size:cover; 
+     }
+}
 .center {
     text-align: center;
 }
