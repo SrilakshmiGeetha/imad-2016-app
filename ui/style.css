@@ -2,7 +2,7 @@ body {
    background: url("http://www.eamped.com/images/stars-wallpaper/stars-wallpaper-7.jpg") repeat 5% 5%;
    background-size:cover;
     font-family: Garamond;
-    color:black;
+    color:white;
 }
 
 
@@ -22,16 +22,11 @@ body {
     height: 200px;
 }
 
- .container{
-                max-width: 800px;    
-                margin: 0 auto;
-                color: blue; 
-                font-family: comics sans;
-            }
+ 
 .header1
 {
     margin-Left:285px;
-    color:SaddleBrown;
+    color:white;
     font-size:300%;
     font-style:Italic;
     font-weight:bold;    
@@ -39,7 +34,7 @@ body {
 .header2
 {
     margin-Left:320px;
-    color:SaddleBrown;
+    color:white;
     font-size:300%;
     font-style:Italic;
     font-weight:bold; 
@@ -58,7 +53,7 @@ body {
 .head
 {
     margin-Left:200px;
-    color:SaddleBrown;
+    color:white;
 }
 .heading
 {
@@ -74,13 +69,13 @@ body {
 .login
 {
     margin-Left:500px;
-    color:SaddleBrown; 
+    color:white; 
 }
 .sub
 {
     width: 250px;
     height: 100px;
-    color: Bisque;
+    color:white;
     background-color:SaddleBrown;
     font-size: 150%;
     margin-Left:200px;
