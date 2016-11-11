@@ -71,6 +71,10 @@ body {
     margin-Left:500px;
     color:SaddleBrown; 
 }
+.sidebar
+{
+    background-color:SaddleBrown;
+}
 .sub
 {
     width: 250px;
