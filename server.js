@@ -167,6 +167,24 @@ app.post('/create-user',function(req,res)
         }
    });
 });
+app.post('/add-article',function(req,res)
+{
+   var title=req.body.title;
+   var articles=req.body.article;
+   pool.query('INSERT INTO "articles" (title,article) VALUES ($1,$2)', [title,article],function(err,result)
+   {console.log("hello");
+        if(err)
+        {
+            res.status(500).send(err.toString());
+        }
+      
+        
+        else
+        {
+            res.status(200).send("Succesfully inserted");
+        }
+   });
+});
 
 app.post('/login',function(req,res)
 {
