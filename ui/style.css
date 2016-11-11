@@ -3,11 +3,12 @@ body {
     font-family: Garamond;
     color:black;
 }
-#full.animate {
+#full{
 	animation-name: backg;
 	animation-duration: 10s;
 	animation-timing-function: ease;
 	animation-iteration-count: 200;
+	animation-direction: normal;
 }
 @keyframes backg
 {
