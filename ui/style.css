@@ -4,22 +4,44 @@ body {
     color:black;
 }
 
-
-@keyframes animatedBackground {
-	from { 
-	    background-image: url("http://i3.wallpaperscraft.com/image/vintage_pens_writing_paper_74945_1280x1024.jpg");
-	    background-position: 0 0; }
-	to { 
-	    background-image: url("http://freedomwallpaper.com/wallpaper2/funky-wallpaper-hd.jpg");
-	    background-position: 100% 0; }
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
 }
 
-#full{ 
-	
-	background-position: 0px 0px;
-	background-repeat: repeat-x;
-	animation: animatedBackground 10s linear infinite;
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf3 .top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
+
 .center {
     text-align: center;
 }
