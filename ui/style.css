@@ -4,18 +4,7 @@ body {
     color:black;
 }
 
-#midground {
-	background: url(/ui/midground.png) repeat 20% 20%;
-	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
-	z-index: 997;
-}
-#foreground {
-	background: url(/ui/foreground.png) repeat 90% 110%;
-	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
-	z-index: 998;
-}
+
 .center {
     text-align: center;
 }
@@ -56,14 +45,14 @@ body {
 }
 .enter
 {
-    	position: absolute;
+    
     width: 200px;
     height: 60px;
     color: Bisque;
     background-color:SaddleBrown;
     font-size: 150%;
     margin-top:20px;
-    z-index: 10001;
+  
 }
 .head
 {
@@ -75,11 +64,11 @@ body {
     margin-Top:40px;
 }
 .sign
-{	position: absolute;
+{
     margin-Left:200px;
    height:40px;
    width:200px;
-   	z-index: 10001;
+ 
 }
 .login
 {
@@ -87,7 +76,7 @@ body {
     color:SaddleBrown; 
 }
 .sub
-{	position: absolute;
+{
     width: 250px;
     height: 100px;
     color: Bisque;
@@ -95,28 +84,28 @@ body {
     font-size: 150%;
     margin-Left:200px;
     margin-Top: 20px;
-    	z-index: 10001;
+    
 }
 .sub2
-{	position: absolute;
+{	
     margin-Left:500px;
      height:40px;
     width:200px
 }
 #button1
 {
-   	position: absolute;
+  
     margin-Left:500px;
     margin-Top:10px;
-     	z-index: 10001;
+     
 }
 #button2
 {
 
-    	position: absolute;
+ 
     margin-Left:500px;
     margin-Top:10px;
-    	z-index: 10001;
+    
     
 }
 
