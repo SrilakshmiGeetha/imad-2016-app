@@ -1,5 +1,6 @@
 body {
-   background: url(/ui/background.png) repeat 5% 5%;
+   background: url("http://www.eamped.com/images/stars-wallpaper/stars-wallpaper-7.jpg") repeat 5% 5%;
+   background-size:cover;
     font-family: Garamond;
     color:black;
 }
