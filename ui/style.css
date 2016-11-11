@@ -63,6 +63,7 @@ body {
     background-color:SaddleBrown;
     font-size: 150%;
     margin-top:20px;
+    z-index: 10001;
 }
 .head
 {
@@ -78,6 +79,7 @@ body {
     margin-Left:200px;
    height:40px;
    width:200px;
+   	z-index: 10001;
 }
 .login
 {
@@ -93,6 +95,7 @@ body {
     font-size: 150%;
     margin-Left:200px;
     margin-Top: 20px;
+    	z-index: 10001;
 }
 .sub2
 {
@@ -105,7 +108,7 @@ body {
    
     margin-Left:500px;
     margin-Top:10px;
-     
+     	z-index: 10001;
 }
 #button2
 {
@@ -113,6 +116,7 @@ body {
     
     margin-Left:500px;
     margin-Top:10px;
+    	z-index: 10001;
     
 }
 
