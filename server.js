@@ -234,7 +234,8 @@ app.get('/submit-name/:name',function(req,res)
     res.send(JSON.stringify(names));
     
 });
-app.get('/get-articles', function (req, res) {
+app.get('/get-articles', function (req, res)
+{
   // SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
   pool.query("SELECT MAX(count) FROM articles ",function (err, result)
   {
@@ -245,41 +246,46 @@ app.get('/get-articles', function (req, res) {
          else
          {
             console.log("WORKING2");
-         var id=result[0].rows.count;
-         pool.query("SELECT * FROM articles where count=$1 ",[id],function (err, result)
-        { 
-        if (err) 
-        {
-             res.status(500).send(err.toString());
-         } 
-         else 
-         {
-            if (result.rows.length === 0) {
-            res.status(404).send('Article not found');
-            }
-         else 
-         {
+            var id=result[0].rows.count;
+            pool.query("SELECT * FROM articles where count=$1 ",[id],function (err, result)
+            { 
+            if(err) 
+             {
+                  res.status(500).send(err.toString());
+             } 
+            else 
+            {
+                  if (result.rows.length === 0)
+                  {
+                        res.status(404).send('Article not found');
+                   }
+                 else 
+                 {
              
-            console.log("WORKING3");
-            var articleData = result.rows[0];
-            res.send(JSON.stringify(result.rows));
-         }
-         }
+                    console.log("WORKING3");
+                     var articleData = result.rows[0];
+                    res.send(JSON.stringify(result.rows));
+                 }
+             }
         
-        });
+             });
         }
   });
 });
 
-app.get('/ui/main.js',function(req,res){
+app.get('/ui/main.js',function(req,res)
+{
 
     res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
 app.get('/ui/style.css', function (req, res) 
 {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
  });
+ app.get('/ui/add.html', function (req, res) 
+{
+  res.sendFile(path.join(__dirname, 'ui', 'add.html'));
+});
  app.get('/ui/Setting.css', function (req, res) 
 {
   res.sendFile(path.join(__dirname, 'ui', 'Setting.css'));
