@@ -21,8 +21,11 @@ body {
 .img-medium {
     height: 200px;
 }
+.searchbar
+{
+    margin-Left:900px;
+}
 
- 
 .header1
 {
     margin-Left:285px;
@@ -73,9 +76,13 @@ body {
 }
 .sidebar
 {
-    width:200px;
+    width:400px;
     height:900px;
     background-color:Sienna;
+}
+.searchbar
+{
+    
 }
 .sub
 {
