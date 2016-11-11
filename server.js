@@ -136,16 +136,16 @@ function hash(input,salt)
     var hashed=crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
     return ["pbkdf2","10000",salt,hashed.toString('hex')].join('$');
 }
-app.get('/ui/Data.js',function(req,res){
 
-    res.sendFile(path.join(__dirname, 'ui', 'Data.js'));
-});
 
 app.get('/',function(req,res)
 {
     res.sendFile(path.join(__dirname,'ui','index.html'));
 });
+app.get('/ui/Data.js',function(req,res){
 
+    res.sendFile(path.join(__dirname, 'ui', 'Data.js'));
+});
 app.post('/create-user',function(req,res)
 {
    var username=req.body.username;
