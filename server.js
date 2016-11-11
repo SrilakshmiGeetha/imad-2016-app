@@ -204,6 +204,15 @@ app.get('/ui/favicon.ico',function(req,res)
 {
     res.sendFile(path.join(__dirname,'ui','favicon.ico'));
 });
+ app.get('/ui/add.html', function (req, res) 
+{
+  res.sendFile(path.join(__dirname, 'ui', 'add.html'));
+});
+ app.get('/ui/Setting.css', function (req, res) 
+{
+  res.sendFile(path.join(__dirname, 'ui', 'Setting.css'));
+ });
+
 app.get('/ui/Layout.html',function(req,res){
 
     res.sendFile(path.join(__dirname, 'ui', 'Layout.html'));
@@ -281,14 +290,6 @@ app.get('/ui/main.js',function(req,res)
 app.get('/ui/style.css', function (req, res) 
 {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
- });
- app.get('/ui/add.html', function (req, res) 
-{
-  res.sendFile(path.join(__dirname, 'ui', 'add.html'));
-});
- app.get('/ui/Setting.css', function (req, res) 
-{
-  res.sendFile(path.join(__dirname, 'ui', 'Setting.css'));
  });
 
 
