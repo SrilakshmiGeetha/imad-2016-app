@@ -3,13 +3,7 @@ body {
     font-family: Garamond;
     color:black;
 }
-#full{
-	animation-name: backg;
-	animation-duration: 10s;
-	animation-timing-function: ease;
-	animation-iteration-count: 200;
-	animation-direction: normal;
-}
+
 @keyframes backg
 {
     0%{
@@ -21,6 +15,13 @@ body {
          background-image:url("http://freedomwallpaper.com/wallpaper2/funky-wallpaper-hd.jpg");
          background-size:cover; 
      }
+}
+#full{
+	animation-name: backg;
+	animation-duration: 10s;
+	animation-timing-function: ease;
+	animation-iteration-count: 200;
+	animation-direction: normal;
 }
 .center {
     text-align: center;
