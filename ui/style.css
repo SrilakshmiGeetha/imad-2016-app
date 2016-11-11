@@ -56,7 +56,7 @@ body {
 }
 .enter
 {
-    
+    	position: absolute;
     width: 200px;
     height: 60px;
     color: Bisque;
@@ -75,7 +75,7 @@ body {
     margin-Top:40px;
 }
 .sign
-{
+{	position: absolute;
     margin-Left:200px;
    height:40px;
    width:200px;
@@ -87,7 +87,7 @@ body {
     color:SaddleBrown; 
 }
 .sub
-{
+{	position: absolute;
     width: 250px;
     height: 100px;
     color: Bisque;
@@ -98,14 +98,14 @@ body {
     	z-index: 10001;
 }
 .sub2
-{
+{	position: absolute;
     margin-Left:500px;
      height:40px;
     width:200px
 }
 #button1
 {
-   
+   	position: absolute;
     margin-Left:500px;
     margin-Top:10px;
      	z-index: 10001;
@@ -113,7 +113,7 @@ body {
 #button2
 {
 
-    
+    	position: absolute;
     margin-Left:500px;
     margin-Top:10px;
     	z-index: 10001;
