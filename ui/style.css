@@ -4,24 +4,20 @@ body {
     color:black;
 }
 
-@keyframes backg
-{
-    0%{
-        background-image:url("http://i3.wallpaperscraft.com/image/vintage_pens_writing_paper_74945_1280x1024.jpg");
-        background-size:cover; 
-     }
-    100%
-     {
-         background-image:url("http://freedomwallpaper.com/wallpaper2/funky-wallpaper-hd.jpg");
-         background-size:cover; 
-     }
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
 }
-#full{
-	animation-name: backg;
-	animation-duration: 10s;
-	animation-timing-function: ease;
-	animation-iteration-count: 200;
-	animation-direction: normal;
+
+#animate-area	{ 
+	width: 560px; 
+	height: 400px; 
+	background-image: url("http://i3.wallpaperscraft.com/image/vintage_pens_writing_paper_74945_1280x1024.jpg");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 40s linear infinite;
 }
 .center {
     text-align: center;
