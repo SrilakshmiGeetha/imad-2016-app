@@ -25,3 +25,7 @@ body {
     background-color:transparent;
     font-size: 150%;
 }
+.position
+{
+    position:relative;
+}
