@@ -5,7 +5,7 @@ function dummy(){
 var x=document.getElementById("submitbutton");
  
 
-/*
+
 console.log("hey");
 var request = new XMLHttpRequest();
 
@@ -29,10 +29,9 @@ request.onreadystatechange = function ()
         request.open('GET', '/get-articles', true);
         request.send(null);
     }
-}*/
+}
 var y=document.getElementById("button1");
 
-/*
  x.onclick = function()
  {
    var request=new XMLHttpRequest();
@@ -59,7 +58,7 @@ var y=document.getElementById("button1");
     request.send(JSON.stringify({title:title, article:article}));
      
 };
-*/
+
  y.onclick=function()
  {
      alert("processing");
