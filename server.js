@@ -112,8 +112,7 @@ app.post('/add-article',function(req,res)
 
 app.post('/login',function(req,res)
 {
-    alert("logged in");
-/*
+    
    var username=req.body.username;
    var password=req.body.password;
    
@@ -141,7 +140,7 @@ app.post('/login',function(req,res)
             }
             
         }
-   });*/
+   });
 });
 
 app.get('/ui/favicon.ico',function(req,res)
