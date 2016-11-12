@@ -20,7 +20,7 @@ function dummy(){
     var username=document.getElementById('username1').value;
     var password=document.getElementById('password1').value;
     console.log(username);
-    request.open('POST','/login' ,true);
+    request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/login' ,true);
     request.setRequestHeader('Content-Type','application/json');
     request.send(JSON.stringify({"username": username, "password": password}));
 }
