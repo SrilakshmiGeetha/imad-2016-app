@@ -115,10 +115,10 @@ app.post('/loginPage',function(req,res)
     
    var username=req.body.username;
    var password=req.body.password;
-   console.log("heyyy");
+   
    
    pool.query('SELECT * FROM "user" WHERE username = ($1)', [username],function(err,result)
-   {console.log("hello");
+   {
         if(err)
         {
             res.status(500).send(err.toString());
@@ -131,12 +131,12 @@ app.post('/loginPage',function(req,res)
             var dbString=result.rows[0].password;
             if(dbString===hashedpassword)
             {
-                alert("credentials correct");
+                //alert("credentials correct");
                 res.status(200).send("logged in");
             }
             else
             {
-                alert("incorrect credentials");
+                //alert("incorrect credentials");
                  res.status(404).send("not logged in");
             }
             
