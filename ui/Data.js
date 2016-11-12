@@ -8,6 +8,7 @@ function dummy(){
             
             if(request.status===200)
             {
+                console.log("LOGGING IN");
                 alert("Logging in");
             }
             else if(request.status===500)
