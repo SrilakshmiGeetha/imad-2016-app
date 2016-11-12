@@ -66,7 +66,7 @@ function dummy(){
             
             if(request.status===200)
             {
-                console.log("LOGGING IN");
+                
                 alert("Logging in");
             }
             else if(request.status===500)
@@ -81,6 +81,7 @@ function dummy(){
     request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/loginPage' ,true);
     request.setRequestHeader('Content-Type','application/json');
     request.send(JSON.stringify({"username": username, "password": password}));
+    console.log("LOGGING IN");
 }
 /*
  var x=document.getElementById("button");
