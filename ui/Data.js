@@ -28,7 +28,7 @@ request.onreadystatechange = function ()
 }*/
 var y=document.getElementById("button1");
 
-if(x != NULL){
+/*
  x.onclick = function()
  {
    var request=new XMLHttpRequest();
@@ -55,7 +55,7 @@ if(x != NULL){
     request.send(JSON.stringify({title:title, article:article}));
      
 };
-}
+*/
  y.onclick=function()
  {
      alert("processing");
