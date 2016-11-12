@@ -21,7 +21,7 @@ function dummy(){
     console.log(username);
     request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/login' ,true);
     request.setRequestHeader('Content-Type','application/json');
-    request.send(JSON.stringify({username: username, password: password}));
+    request.send(JSON.stringify({"username": username, "password": password}));
 }
 /*
 var x=document.getElementById("submitbutton");
