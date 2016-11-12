@@ -131,14 +131,15 @@ app.post('/loginPage',function(req,res)
             var dbString=result.rows[0].password;
             if(dbString===hashedpassword)
             {
+                 res.send(dbString);
                 //alert("credentials correct");
-                res.status(200).send("logged in");
+               
             }
             else
             {   
-                res.send(dbString);
+               
                 //alert("incorrect credentials");
-                 res.status(404).send("not logged in");
+                 res.status(200).send("logged in");
             }
             
         }
