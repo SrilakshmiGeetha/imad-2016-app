@@ -1,7 +1,7 @@
 function dummy(){
     alert("dummy called");
 }
-
+/*
 var x=document.getElementById("submitbutton");
  
 
@@ -88,4 +88,4 @@ var y=document.getElementById("button1");
     request.send(JSON.stringify({"username": username, "password": password}));
      
 };
-   
+   */
