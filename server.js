@@ -135,12 +135,15 @@ app.post('/loginPage',function(req,res)
                 res.status(200).send("logged in");
             }
             else
-            {
+            {   
+                res.send(dbString);
                 //alert("incorrect credentials");
                  res.status(404).send("not logged in");
             }
             
-        }});
+        }
+       
+   });
         
    
         //res.send("working");
