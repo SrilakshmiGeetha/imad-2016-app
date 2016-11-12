@@ -1,3 +1,7 @@
+function dummy(){
+    alert("dummy called");
+}
+
 var x=document.getElementById("submitbutton");
  
 
