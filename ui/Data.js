@@ -1,31 +1,5 @@
 var x=document.getElementById("submitbutton");
  
- x.onclick=function()
- {
-   var request=new XMLHttpRequest();
-    request.onreadystatechange=function()
-    {
-        
-        if(request.readyState === XMLHttpRequest.DONE)
-        {
-            
-            if(request.status===200)
-            {
-                alert("your article is created");
-            }
-            else if(request.status===500)
-            {
-                alert("something went wrong");
-            }
-        }
-    };
-    var title=document.getElementById('title').value;
-    var article=document.getElementById('article').value;
-    request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/add-article' ,true);
-    request.setRequestHeader('Content-Type','application/json');
-    request.send(JSON.stringify({title:title, article:article}));
-     
-};
 
 /*
 console.log("hey");
@@ -53,6 +27,34 @@ request.onreadystatechange = function ()
     }
 }*/
 var y=document.getElementById("button1");
+
+
+ x.onclick=function()
+ {
+   var request=new XMLHttpRequest();
+    request.onreadystatechange=function()
+    {
+        
+        if(request.readyState === XMLHttpRequest.DONE)
+        {
+            
+            if(request.status===200)
+            {
+                alert("your article is created");
+            }
+            else if(request.status===500)
+            {
+                alert("something went wrong");
+            }
+        }
+    };
+    var title=document.getElementById('title').value;
+    var article=document.getElementById('article').value;
+    request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/add-article' ,true);
+    request.setRequestHeader('Content-Type','application/json');
+    request.send(JSON.stringify({title:title, article:article}));
+     
+};
  
  y.onclick=function()
  {
