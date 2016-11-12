@@ -29,7 +29,7 @@ request.onreadystatechange = function ()
 var y=document.getElementById("button1");
 
 
- x.onclick=function()
+ x.onclick = function()
  {
    var request=new XMLHttpRequest();
     request.onreadystatechange=function()
