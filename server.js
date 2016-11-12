@@ -116,7 +116,7 @@ app.post('/loginPage',function(req,res)
    var username=req.body.username;
    var password=req.body.password;
    console.log("heyyy");
-   /*
+   
    pool.query('SELECT * FROM "user" WHERE username = ($1)', [username],function(err,result)
    {console.log("hello");
         if(err)
@@ -141,9 +141,9 @@ app.post('/loginPage',function(req,res)
             }
             
         }});
-        */
+        
    
-        res.send("working");
+        //res.send("working");
    
 });
 
