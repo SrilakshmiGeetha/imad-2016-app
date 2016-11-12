@@ -51,7 +51,7 @@ request.onreadystatechange = function ()
         request.open('GET', '/get-articles', true);
         request.send(null);
     }
-}
+}*/
 var y=document.getElementById("button1");
  
  y.onclick=function()
@@ -82,9 +82,4 @@ var y=document.getElementById("button1");
    request.send(JSON.stringify({"username": username, "password": password}));
      
 };
-
-<div id="cf">
-  <img class="bottom" src="http://i3.wallpaperscraft.com/image/vintage_pens_writing_paper_74945_1280x1024.jpg" />
-  <img class="top" src="http://freedomwallpaper.com/wallpaper2/funky-wallpaper-hd.jpg" />
-    </div>
-    */
+   
