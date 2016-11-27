@@ -24,6 +24,7 @@ body {
     color:bisque;
     background-color:transparent;
     font-size: 150%;
+    float: left;
 }
 
 .position
