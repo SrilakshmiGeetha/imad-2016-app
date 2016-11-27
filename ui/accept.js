@@ -19,7 +19,7 @@ function create()
     };
     var title=document.getElementById('title').value;
     var article=document.getElementById('article').value;
-    console.log(title);
+    console.log(article);
     request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/create-content' ,true);
     request.setRequestHeader('Content-Type','application/json');
     request.send(JSON.stringify({"title": title, "article":article}));
