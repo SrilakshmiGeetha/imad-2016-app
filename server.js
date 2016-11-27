@@ -112,9 +112,10 @@ app.post('/add-article',function(req,res)
 });*/
 app.post('/create-content', function (req, res) 
 {
-   var title = req.body.title;
+      alert("processing");
+   /*var title = req.body.title;
    var article = req.body.article;
-   alert("processing");
+ 
    pool.query('INSERT INTO "articles" (title,article) VALUES ($1,$2)', [title,article], function (err, result) 
    {
        console.log("HETYYTYY");
@@ -126,7 +127,7 @@ app.post('/create-content', function (req, res)
       {
           alert("INSERTED");    
       }
-   });
+   });*/
 });
 app.post('/loginPage', function (req, res) {
    var username = req.body.username;
