@@ -83,7 +83,7 @@ function dummy(){
     request.send(JSON.stringify({"username": username, "password": password}));
     console.log("LOGGING IN");
 }
-/*
+
  var x=document.getElementById("button");
  
  x.onclick=function()
@@ -116,4 +116,3 @@ function dummy(){
     request.send(JSON.stringify({username: username, password: password, email: email}));
      
 };
-*/
