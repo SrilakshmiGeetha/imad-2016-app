@@ -167,6 +167,11 @@ app.get('/ui/favicon.ico',function(req,res)
 {
     res.sendFile(path.join(__dirname,'ui','favicon.ico'));
 });
+app.get('/ui/accept.js',function(req,res)
+{
+
+    res.sendFile(path.join(__dirname, 'ui', 'accept.js'));
+});
  app.get('/ui/add.html', function (req, res) 
 {
   res.sendFile(path.join(__dirname, 'ui', 'add.html'));
@@ -184,11 +189,7 @@ app.get('/ui/homepage',function(req,res){
 
     res.sendFile(path.join(__dirname, 'ui', 'homepage.html'));
 });
-app.get('/ui/accept.js',function(req,res)
-{
 
-    res.sendFile(path.join(__dirname, 'ui', 'accept.js'));
-});
 app.get('/ui/main.js',function(req,res)
 {
 
