@@ -1,5 +1,4 @@
- var x=document.getElementById("submitbutton");
- x.onclick=function()
+function create()
  {
    var request=new XMLHttpRequest();
     request.onreadystatechange=function()
@@ -23,5 +22,5 @@
     console.log(title);
     request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/create-content' ,true);
     request.setRequestHeader('Content-Type','application/json');
-    request.send(JSON.stringify({title: title, article:article}));
-};
+    request.send(JSON.stringify({"title": title, "article":article}));
+}
