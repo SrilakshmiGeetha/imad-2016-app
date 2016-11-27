@@ -115,7 +115,7 @@ app.post('/create-content', function (req, res)
    var title = req.body.title;
    var article = req.body.article;
    
-   pool.query('INSERT INTO articles (title,article) VALUES ($1,$2)', [title,article], function (err, result) 
+   pool.query('INSERT INTO "articles" (title,article) VALUES ($1,$2)', [title,article], function (err, result) 
    {
        console.log("HETYYTYY");
       if (err) 
