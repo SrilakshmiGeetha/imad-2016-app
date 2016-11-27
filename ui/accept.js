@@ -19,7 +19,7 @@
         }
     };
     var title=document.getElementById('title').value;
-    var password=document.getElementById('article').value;
+    var article=document.getElementById('article').value;
     console.log(title);
     request.open('POST','http://srilakshmigeetha.imad.hasura-app.io/create-content' ,true);
     request.setRequestHeader('Content-Type','application/json');
