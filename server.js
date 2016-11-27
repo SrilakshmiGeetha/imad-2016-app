@@ -118,12 +118,13 @@ app.post('/create-content', function (req, res)
    pool.query('INSERT INTO articles (title,article) VALUES ($1,$2)', [title,article], function (err, result) 
    {
        console.log("HETYYTYY");
-      if (err) {
+      if (err) 
+      {
           res.status(500).send(err.toString());
       } 
       else
       {
-        alert("INSERTED");    
+          alert("INSERTED");    
       }
    });
 });
