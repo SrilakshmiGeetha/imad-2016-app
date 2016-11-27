@@ -91,6 +91,7 @@ app.post('/create-user',function(req,res)
         }
    });
 });
+/*
 app.post('/add-article',function(req,res)
 {
    var title=req.body.title;
@@ -108,8 +109,24 @@ app.post('/add-article',function(req,res)
             res.status(200).send("Succesfully inserted");
         }
    });
+});*/
+app.post('/create-content', function (req, res) 
+{
+   var title = req.body.title;
+   var article = req.body.article;
+   
+   pool.query('INSERT INTO articles (title,article) VALUES ($1,$2)', [title,article], function (err, result) 
+   {
+       console.log("HETYYTYY");
+      if (err) {
+          res.status(500).send(err.toString());
+      } 
+      else
+      {
+        alert("INSERTED");    
+      }
+   });
 });
-
 app.post('/loginPage', function (req, res) {
    var username = req.body.username;
    var password = req.body.password;
@@ -188,7 +205,7 @@ app.get('/submit-name/:name',function(req,res)
     names.push(name);
     res.send(JSON.stringify(names));
     
-});
+});/*
 app.get('/get-articles', function (req, res)
 {
   // SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
@@ -226,7 +243,7 @@ app.get('/get-articles', function (req, res)
         }
   });
 });
-
+*/
 app.get('/ui/main.js',function(req,res)
 {
 
