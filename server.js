@@ -112,7 +112,6 @@ app.post('/add-article',function(req,res)
 });*/
 app.post('/create-content', function (req, res) 
 {
-      alert("processing");
       res.send("workings");
    /*var title = req.body.title;
    var article = req.body.article;
