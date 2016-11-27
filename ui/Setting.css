@@ -15,7 +15,8 @@ body {
 {
     width:300px;
     height:900px;
-    background-image:url("https://s-media-cache-ak0.pinimg.com/originals/45/21/72/452172a2ebc5bd83914b61c002a2b8e2.jpg");   
+    background-image:url("https://s-media-cache-ak0.pinimg.com/originals/45/21/72/452172a2ebc5bd83914b61c002a2b8e2.jpg"); 
+     float: left;
 }
 .blogbutton
 {
@@ -24,7 +25,7 @@ body {
     color:bisque;
     background-color:transparent;
     font-size: 150%;
-    float: left;
+   
 }
 
 .position
