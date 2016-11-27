@@ -25,7 +25,27 @@ body {
     background-color:transparent;
     font-size: 150%;
 }
+
 .position
 {
-    position:absolute;
+    overflow:auto;
 }
+#title
+{   
+    margin-top:10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 50px;
+}
+#submitbutton
+{
+    margin-left: 10px;
+}
+#article
+{
+    margin-left: 10px;
+    margin-top: 10px;
+    width:900px;
+    height: 700px;
+}
+
